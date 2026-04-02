@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Muslin | The Weaver’s Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#d2e9c7",
+                        "on-primary-fixed-variant": "#7a2e2d",
+                        "on-surface-variant": "#544241",
+                        "inverse-on-surface": "#f4f0e6",
+                        "surface-container": "#f2eee3",
+                        "on-background": "#1c1c15",
+                        "inverse-primary": "#ffb3af",
+                        "primary-fixed": "#ffdad7",
+                        "tertiary-container": "#2d4028",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#fdf9ee",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#984543",
+                        "on-secondary-container": "#785806",
+                        "inverse-surface": "#323129",
+                        "surface-dim": "#dddacf",
+                        "outline-variant": "#dac1bf",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#5c4200",
+                        "on-secondary-fixed": "#261900",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#ece8dd",
+                        "secondary-container": "#fdd178",
+                        "secondary": "#795907",
+                        "on-tertiary-container": "#96ac8c",
+                        "surface-bright": "#fdf9ee",
+                        "on-primary-container": "#ee8a86",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#0e200a",
+                        "secondary-fixed-dim": "#ebc16a",
+                        "on-surface": "#1c1c15",
+                        "background": "#fdf9ee",
+                        "primary-fixed-dim": "#ffb3af",
+                        "on-tertiary-fixed-variant": "#394c33",
+                        "surface-container-low": "#f7f3e8",
+                        "secondary-fixed": "#ffdea2",
+                        "primary": "#4e0d10",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#182a14",
+                        "surface-variant": "#e6e2d7",
+                        "on-primary-fixed": "#3f0307",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#b7cdac",
+                        "outline": "#877271",
+                        "surface-container-highest": "#e6e2d7",
+                        "primary-container": "#6b2323"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fdf9ee;
+            color: #1c1c15;
+            overflow-x: hidden;
+        }
+        ::selection {
+            background-color: #ffdad7;
+            color: #4e0d10;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="bg-[#fdf9ee] dark:bg-[#1c1c15] text-[#4e0d10] dark:text-[#984543] docked full-width top-0 z-50 flex justify-between items-center w-full px-8 py-6 max-w-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined scale-100 active:opacity-70 transition-opacity cursor-pointer">menu</span>
+<h1 class="font-serif text-2xl italic text-[#4e0d10] dark:text-[#fdf9ee]">The Weaver’s Archive</h1>
+</div>
+<nav class="hidden md:flex gap-10 items-center">
+<a class="font-serif font-medium text-lg tracking-tight text-[#4e0d10] dark:text-[#984543] border-b-2 border-[#4e0d10] hover:text-[#795907] transition-colors duration-300" href="#">The Collection</a>
+<a class="font-serif font-medium text-lg tracking-tight text-[#544241] dark:text-[#dac1bf] hover:text-[#795907] transition-colors duration-300" href="#">Archival Methods</a>
+<a class="font-serif font-medium text-lg tracking-tight text-[#544241] dark:text-[#dac1bf] hover:text-[#795907] transition-colors duration-300" href="#">Institutional Research</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined scale-100 active:opacity-70 transition-opacity cursor-pointer">search</span>
+</div>
+</header>
+<main class="w-full">
+<!-- Hero Section -->
+<section class="relative w-full h-[751px] overflow-hidden bg-surface-container-low">
+<img alt="Fine Muslin Fabric" class="w-full h-full object-cover" data-alt="Close-up of ethereal white translucent muslin fabric draped elegantly, showing delicate thread weave and soft morning light filtering through folds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhYQOjltRBlKtkSaXrN5TRTJ47VEBTKQ0utwXNoSekH4uFgTJFrph-2sghbUUy8A7NU27YVcJRUCml2pwFP0oEjMHAdP73PTvUylAx6W5fr5DGSqYgeATy9_m_EfF0xKzZzlB4IbLFndMgxe_lW4jAFNPurI1DAwsq_4dy51vTDWwI-G8QJaALOQBchq_qJ9T0YgFagn6EGS8fI866I17Me9BKHbSPJJmrj19TKiQleo6mL5ejtid06MRMx805eEubdfBgTLov28Y"/>
+<div class="absolute inset-0 flex flex-col justify-end p-12 md:p-24 bg-gradient-to-t from-background/60 to-transparent">
+<div class="max-w-4xl">
+<span class="font-label uppercase tracking-[0.3em] text-secondary mb-4 block text-sm">West Bengal, India</span>
+<h2 class="font-headline text-7xl md:text-9xl font-medium tracking-tighter text-on-background">Muslin</h2>
+</div>
+</div>
+</section>
+<!-- Intro Section: The Digital Curator Editorial Layout -->
+<section class="py-24 px-8 md:px-24 grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-4 sticky top-32">
+<h3 class="font-headline text-4xl md:text-5xl text-primary leading-tight">The Woven Air</h3>
+<div class="w-16 h-[1px] bg-outline-variant/40 mt-8"></div>
+<p class="font-label text-xs uppercase tracking-widest mt-8 text-on-surface-variant">Archival Reference: WB-MUS-001</p>
+</div>
+<div class="md:col-span-7 md:col-start-6 space-y-8">
+<p class="font-headline text-2xl md:text-3xl leading-relaxed text-on-surface italic">
+                    Known historically as 'Malmal', the muslin of Bengal was so incredibly fine that it was often described by travelers as "woven air," "invisible webbing," or "the morning dew." 
+                </p>
+<p class="font-body text-lg leading-loose text-on-surface-variant">
+                    For centuries, the riverbanks of the Brahmaputra and the Ganges provided the unique environmental conditions necessary to produce the world's most sought-after textile. Unlike any other cotton fabric, the muslin of Dhaka and West Bengal achieved a level of transparency and lightness that defied the mechanical limitations of the era. Legend tells of muslins so fine that a fifty-yard length could be passed through a thumb ring.
+                </p>
+<p class="font-body text-lg leading-loose text-on-surface-variant">
+                    The fabric was more than just a commodity; it was a testament to the supreme mastery of human touch over raw material. In the humid dawns of Bengal, weavers worked with threads so delicate they were nearly invisible to the naked eye, creating a textile that felt like a second skin, capable of cooling the wearer in the most intense tropical heat while maintaining an ethereal, luminous aesthetic.
+                </p>
+</div>
+</section>
+<!-- Material Section: Asymmetric Bento Style -->
+<section class="bg-surface-container-low py-32 px-8 md:px-24">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row gap-24 items-center">
+<div class="w-full md:w-1/2 order-2 md:order-1">
+<div class="p-1 bg-surface-variant inline-block">
+<img alt="Cotton plant" class="w-full h-auto" data-alt="Macro photography of raw Phuti Karpas cotton boll on a dark wooden archival tray with dramatic side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlvJbwiihkg2g7ars4mDNrMOKZsQLJ5uixdJcLf7Pl-1sYoX0yFW3OTf5hq3mJFbbjSTyWxkz2vszC7Dbyx_rbHU28fSDa66czbs3n8bukEMWXE7Dmn-pGIahsHdBxW4qYBpCXWviNTaromNVjNiFStmRf7bn2aMC8fSKHG4kx1G_C-OkTCqSkjXmbpX4e0eYgncQKAVUUqJ_UBOwh3kJAKyFuw93myFo9oOC4Jgk52ZAyKE7RVjo45LTMhcjQ9QO7Hq_xc83gyhQ"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 order-1 md:order-2">
+<span class="font-label text-xs uppercase tracking-widest text-secondary mb-4 block">Chapter I: Material</span>
+<h3 class="font-headline text-5xl text-on-surface mb-8">Phuti Karpas &amp; The Humidity</h3>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant mb-6">
+                            The secret of Muslin lay in the <i>Gossypium arboreum var. neglecta</i>, locally known as Phuti Karpas. This specific cotton variety only grew on the specific silty soils along the banks of the Meghna river. Its fibers were shorter but possessed a unique elasticity and grip that allowed for extreme thinning.
+                        </p>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant">
+                            Spinning this fiber required extraordinary environmental control. It was performed almost exclusively by young women during the early morning hours or late evenings when the humidity was at its peak. This moisture prevented the fine threads from snapping under tension, allowing them to be spun into counts as high as 1000—a feat unmatched by modern machinery.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technique Section -->
+<section class="py-32 px-8 md:px-24 bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+<div class="md:col-span-5">
+<span class="font-label text-xs uppercase tracking-widest text-secondary mb-4 block">Chapter II: Technique</span>
+<h3 class="font-headline text-5xl text-on-surface mb-12">The Rhythmic Loom</h3>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant mb-8">
+                        The Muslin loom was a marvel of minimalist engineering. Bamboo frames and delicate reeds were adjusted with surgical precision. The weaver’s touch had to be light enough not to break the warp, yet firm enough to ensure a consistent density.
+                    </p>
+<ul class="space-y-6">
+<li class="flex gap-4 items-start">
+<span class="font-headline text-2xl text-primary italic">01.</span>
+<p class="font-body text-on-surface-variant"><strong class="text-on-surface">The Reed Adjustment:</strong> Specialized bamboo reeds with up to 2800 dents were used to separate the microscopic threads.</p>
+</li>
+<li class="flex gap-4 items-start">
+<span class="font-headline text-2xl text-primary italic">02.</span>
+<p class="font-body text-on-surface-variant"><strong class="text-on-surface">Finger Sensivity:</strong> Spinners used their own skin as a gauge, feeling the thickness of the thread through vibrations alone.</p>
+</li>
+</ul>
+</div>
+<div class="md:col-span-7">
+<div class="relative pl-12">
+<div class="absolute left-0 top-0 bottom-0 w-[1px] bg-outline-variant/30"></div>
+<img alt="Loom details" class="w-full aspect-[4/3] object-cover" data-alt="Detailed view of a traditional wooden handloom in West Bengal with thin white threads stretched vertically under warm soft light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh6EYrV0k-dYq0ScXujIqr3C8z36nN7xFRGyjyPQABWIbK_ddGgWyfjKe9Mm06J6ab78KRiX6JEuEl7CHW1lsfpQDtHGvC5QOePBVERv75FPuPMZdnLEezpc-DZKG28IOSAQRzT_-LSEJv8NhgXjRKTKNjypLZg7iJJAENwjQUZztn8h2wIFGBAgnzyk3xzJ5846lp8F9SmpJl2tRdgwYDT_7kLv2uwdOsoXDKII-S-cu-CDCskRnwhx9R4GDnTgE_8OdT2XfHZiw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Cultural Significance -->
+<section class="bg-primary text-on-primary py-32 px-8 md:px-24 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<img alt="Mughal Pattern" class="w-full h-full object-cover grayscale" data-alt="Faded archival texture of vintage floral Mughal textile patterns with a distressed paper effect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJfXecntutx1vynGS80dKEqeJa2cBCpqkF4rbIEnGk55dLGsYyj-t9INMKfeMrtXPQBM3xkkSDWu4A7LBdYywv0qv0b1hLKZDoBKx5MV1fXhvPCSZL3dgiDqR5bvRN7izJeAKGrys-iS0If3dXajNwP16X-NwndFWO_iuNkuWBCyBf-klEZFVnCRNt1euMFW6JSefVWOQJQrAqbdIlAF1gv5tT7G2ukLFUq9wQ4MgnaN9Cr5GfKEEElV2k2nkNtEgX5CWifhPyIOk"/>
+</div>
+<div class="max-w-4xl relative z-10">
+<span class="font-label text-xs uppercase tracking-widest text-primary-fixed mb-6 block">Chapter III: Legacy</span>
+<h3 class="font-headline text-6xl mb-12 leading-tight">Mughal Patronage &amp; The Social Fabric</h3>
+<div class="space-y-8 font-body text-lg leading-loose opacity-90">
+<p>
+                        Under the Mughal Empire, Bengal Muslin reached its zenith. Emperors like Jahangir and Aurangzeb were famously captivated by its quality. It became the ultimate symbol of imperial status—a fabric so light that when the princess Zeb-un-Nissa appeared before her father in seven layers of muslin, he reportedly rebuked her for being scantily clad, so transparent was the weave.
+                    </p>
+<p>
+                        But beyond the court, Muslin was a social fabric. It connected the rural cotton growers, the specialized spinners, and the master weavers into a complex ecosystem that defined the economy of Bengal for centuries. It was the "gold" of the East, a currency of art that influenced global fashion from the salons of Paris to the courts of the Far East.
+                    </p>
+<div class="pt-8">
+<button class="bg-surface text-primary px-12 py-5 font-label uppercase tracking-widest text-sm hover:bg-surface-container-high transition-colors">
+                            Explore the Archive
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footnotes / Metrics -->
+<section class="py-16 px-8 md:px-24 bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+<div>
+<h4 class="font-label text-[10px] uppercase tracking-widest text-secondary mb-2">Thread Count</h4>
+<p class="font-headline text-3xl">800 - 1200</p>
+</div>
+<div>
+<h4 class="font-label text-[10px] uppercase tracking-widest text-secondary mb-2">Original Region</h4>
+<p class="font-headline text-3xl">Bengal Delta</p>
+</div>
+<div>
+<h4 class="font-label text-[10px] uppercase tracking-widest text-secondary mb-2">Status</h4>
+<p class="font-headline text-3xl">GI Protected</p>
+</div>
+<div>
+<h4 class="font-label text-[10px] uppercase tracking-widest text-secondary mb-2">Material</h4>
+<p class="font-headline text-3xl">Phuti Karpas</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#4e0d10] dark:bg-[#2d080a] text-[#ffffff] dark:text-[#dac1bf] full-width border-0 flex flex-col items-center gap-8 w-full py-16 px-12">
+<h2 class="font-serif text-xl text-white">THE WEAVER’S ARCHIVE</h2>
+<nav class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="font-sans uppercase tracking-widest text-[11px] text-[#dac1bf] opacity-80 hover:opacity-100 hover:text-white transition-all underline decoration-1 underline-offset-4" href="#">The Collection</a>
+<a class="font-sans uppercase tracking-widest text-[11px] text-[#dac1bf] opacity-80 hover:opacity-100 hover:text-white transition-all" href="#">Archival Methods</a>
+<a class="font-sans uppercase tracking-widest text-[11px] text-[#dac1bf] opacity-80 hover:opacity-100 hover:text-white transition-all" href="#">Institutional Research</a>
+<a class="font-sans uppercase tracking-widest text-[11px] text-[#dac1bf] opacity-80 hover:opacity-100 hover:text-white transition-all" href="#">Conservation Ethics</a>
+<a class="font-sans uppercase tracking-widest text-[11px] text-[#dac1bf] opacity-80 hover:opacity-100 hover:text-white transition-all" href="#">Privacy Policy</a>
+</nav>
+<p class="font-sans uppercase tracking-widest text-[11px] opacity-60 mt-8 text-center">
+            © 2024 THE WEAVER’S ARCHIVE. PRESERVING THE THREADS OF HERITAGE.
+        </p>
+</footer>
+</body></html>

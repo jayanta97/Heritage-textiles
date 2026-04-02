@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Negamam | The Weaver’s Archive</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#fdd178",
+              "inverse-surface": "#323129",
+              "on-tertiary-fixed-variant": "#394c33",
+              "tertiary-container": "#2d4028",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#ffdad7",
+              "on-surface": "#1c1c15",
+              "on-error-container": "#93000a",
+              "secondary": "#795907",
+              "on-primary-fixed-variant": "#7a2e2d",
+              "tertiary": "#182a14",
+              "primary-container": "#6b2323",
+              "outline": "#877271",
+              "on-primary-container": "#ee8a86",
+              "surface-bright": "#fdf9ee",
+              "primary": "#4e0d10",
+              "on-secondary-container": "#785806",
+              "on-secondary-fixed": "#261900",
+              "tertiary-fixed-dim": "#b7cdac",
+              "inverse-primary": "#ffb3af",
+              "surface-variant": "#e6e2d7",
+              "on-tertiary-container": "#96ac8c",
+              "surface-container-low": "#f7f3e8",
+              "surface-container-highest": "#e6e2d7",
+              "error": "#ba1a1a",
+              "secondary-fixed": "#ffdea2",
+              "surface-container-high": "#ece8dd",
+              "secondary-fixed-dim": "#ebc16a",
+              "on-primary-fixed": "#3f0307",
+              "background": "#fdf9ee",
+              "on-tertiary-fixed": "#0e200a",
+              "on-error": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-background": "#1c1c15",
+              "surface-dim": "#dddacf",
+              "on-secondary": "#ffffff",
+              "outline-variant": "#dac1bf",
+              "surface": "#fdf9ee",
+              "on-surface-variant": "#544241",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f4f0e6",
+              "surface-tint": "#984543",
+              "primary-fixed-dim": "#ffb3af",
+              "tertiary-fixed": "#d2e9c7",
+              "surface-container": "#f2eee3",
+              "on-secondary-fixed-variant": "#5c4200"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Work Sans", "sans-serif"],
+              "label": ["Work Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        background-color: #fdf9ee;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface font-body">
+<!-- TopAppBar -->
+<header class="bg-[#fdf9ee] dark:bg-stone-950 flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto docked full-width top-0 z-50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#4e0d10] dark:text-[#984543] cursor-pointer" data-icon="menu">menu</span>
+<span class="text-2xl font-serif italic text-[#4e0d10] dark:text-[#fdf9ee]">The Weaver’s Archive</span>
+</div>
+<nav class="hidden md:flex gap-10">
+<a class="text-[#4e0d10] dark:text-[#fdf9ee] font-bold font-serif hover:text-[#795907] transition-colors duration-300" href="#">Collections</a>
+<a class="text-[#544241] dark:text-stone-400 font-serif hover:text-[#795907] transition-colors duration-300" href="#">Regions</a>
+<a class="text-[#544241] dark:text-stone-400 font-serif hover:text-[#795907] transition-colors duration-300" href="#">Process</a>
+<a class="text-[#544241] dark:text-stone-400 font-serif hover:text-[#795907] transition-colors duration-300" href="#">Curators</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#4e0d10] dark:text-[#984543] cursor-pointer" data-icon="search">search</span>
+</div>
+</header>
+<main class="max-w-screen-2xl mx-auto px-8 md:px-12 pb-32">
+<!-- Hero Section -->
+<section class="mt-12 mb-24 grid grid-cols-1 md:grid-cols-12 gap-0 items-end">
+<div class="md:col-span-8 relative">
+<div class="p-2 bg-surface-variant">
+<img alt="Negamam Textile Close-up" class="w-full aspect-[4/3] object-cover grayscale-[0.2]" data-alt="Close-up of a sturdy Negamam cotton saree showing intricate dark maroon and mustard yellow checks and stripes with professional museum lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXmS4_6mCLJvskl-EL5M711R19iMEevW3yax-TAxTCjcjQF6DsN3Q2J7pnF7JOERINzMgjX_70hLiuYR_Qwvmw___02eF4wIjJwP6hw88JiWqklx7M5r1GK1P3RfFwI21bSuPU5Vhic2CDC5WcJd91WF2R2QnbAQZYiQoFtBwFw1V_eejL0GMjj-CauF5Sc3pXu4kMYdrOF1LJBYjAeiJkA44kx8QNTJF_7O8JwCRUabp3TVm_ykXab9LmtPOoVtIz1t5i7inJl3o"/>
+</div>
+</div>
+<div class="md:col-span-4 md:pl-16 mt-8 md:mt-0 pb-12">
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant mb-4 block">Tamil Nadu / Kongu Nadu</span>
+<h1 class="font-headline text-8xl md:text-9xl leading-none text-primary mb-6">Negamam</h1>
+<p class="font-label text-lg text-secondary italic">An enduring artifact of the everyday.</p>
+</div>
+</section>
+<!-- Archive Introduction -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-32 border-t border-outline-variant/15 pt-16">
+<div class="md:col-span-4">
+<h2 class="font-headline text-4xl leading-tight text-on-surface">The Narrative of Resilience</h2>
+<div class="mt-8">
+<div class="p-6 bg-surface-container-high border-l-4 border-primary">
+<h3 class="font-label font-bold text-xs uppercase tracking-tighter text-on-surface-variant mb-2">Technical Specifications</h3>
+<ul class="space-y-3 font-body text-sm">
+<li class="flex justify-between border-b border-outline-variant/20 pb-1">
+<span class="text-on-surface-variant">Thread Count</span>
+<span class="font-medium">60s - 80s Cotton</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/20 pb-1">
+<span class="text-on-surface-variant">Origin</span>
+<span class="font-medium">Coimbatore District</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/20 pb-1">
+<span class="text-on-surface-variant">Status</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 text-[10px] flex items-center font-bold">GI TAGGED HERITAGE</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 md:col-start-6 space-y-8">
+<p class="font-headline text-2xl leading-relaxed text-on-surface-variant">
+                    The Negamam saree is not a garment of fleeting celebration, but a sturdy, everyday artifact defined by its remarkable resilience. Originating from the weaving clusters of Coimbatore, it serves as a testament to the utilitarian mastery of the Tamil weaver.
+                </p>
+<p class="font-body text-lg leading-loose text-on-surface/80">
+                    Characterized by its dense weave and coarse elegance, the Negamam cotton has long been the preferred choice for the agricultural and rural women of the Kongu region. Unlike the ethereal muslins of the north, these sarees possess a tactile weight—a physical grounding that mirrors the industrious spirit of the communities that produce them. 
+                </p>
+<p class="font-body text-lg leading-loose text-on-surface/80">
+                    The weaver communities of Negamam have meticulously preserved a visual language dominated by checks (kattam) and stripes (vari). These patterns are not merely decorative but structural, reinforcing the fabric's integrity through rhythmic intersections of dyed yarns.
+                </p>
+</div>
+</section>
+<!-- Materials & Technique: Asymmetrical Bento -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
+<!-- Material Column -->
+<div class="space-y-8">
+<div class="bg-surface-container-low p-12">
+<span class="font-label text-xs font-bold text-secondary uppercase tracking-[0.2em] block mb-6">Fiber &amp; Pigment</span>
+<h3 class="font-headline text-4xl text-primary mb-6">Materials</h3>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant">
+                        The foundation of Negamam excellence lies in its thick, highly durable cotton. Typically utilizing counts between 60s and 80s, the fibers are prepared to withstand the rigors of daily labor. 
+                    </p>
+<div class="mt-8 flex gap-4">
+<div class="w-16 h-16 bg-[#4e0d10]"></div>
+<div class="w-16 h-16 bg-[#795907]"></div>
+<div class="w-16 h-16 bg-[#182a14]"></div>
+<div class="w-16 h-16 bg-surface-variant"></div>
+</div>
+<p class="mt-8 font-body text-sm italic text-on-surface-variant">
+                        Traditional dyes favor vibrant, contrasting earth tones—deep madder reds, turmeric golds, and obsidian blacks.
+                    </p>
+</div>
+<div class="p-2 bg-surface-variant overflow-hidden">
+<img alt="Negamam Raw Materials" class="w-full h-80 object-cover" data-alt="Macro photography of raw thick cotton yarns in deep earth tones, stacked neatly in a sunlit weaver's workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkdis6Qtc1o1bZNQ77ajk8Os3Ic8XCgmju77OA7HAyYeXnEkIPvikDD0688__bzmDgM5Tre3SvAT5KB7MLxOPwdpfTTMoG97o1BEND_rAiGoxSf5dB3wG_P4ClQcdtAAP8iqYKThxup02dzFP0kkkK-Zuj03l4lg1kxpoaVHWyr3XdRGrE56A_cJkb7vkVtUB2w2IDsJs_a93Y750B4cHOWljkptbi6nF6tdXMvyjaIm1S-64cCRAJ_mUiRWaizjz4VLt7gQX85OI"/>
+</div>
+</div>
+<!-- Technique Column -->
+<div class="flex flex-col justify-between">
+<div class="p-2 bg-surface-variant mb-8">
+<img alt="Handloom Mechanics" class="w-full h-96 object-cover" data-alt="Interior of a traditional Indian handloom workshop with wooden shuttles and dark heavy loom mechanics in silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAODXuOv8aNapTvLmUAekllbXlxzi3veXTK7D4V34jPskR20Lxa-lCLc-_-q-vC85bZ12SaE2RPvKJbzb2YwyGZoJsiqiEtcWRue6leooRuGAy_w3Fjy2eI61I_NPuAEOhQDKpulpSVMYAYJlv3o-Dxtk4-awHiBX4SN4cIWEbG95rHddHBhSsjWAXwgtH8zwJxm5vjmWaT91BQwIQQEpZwHs4MlIkgCfcFZn6n4jOx5ix_DuSe6COT2jwxma2zrchu-geeOkG-BH0"/>
+</div>
+<div class="bg-surface-container-low p-12 flex-grow">
+<span class="font-label text-xs font-bold text-secondary uppercase tracking-[0.2em] block mb-6">The Loom Mechanics</span>
+<h3 class="font-headline text-4xl text-primary mb-6">Technique</h3>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant mb-6">
+                        The defining geometry of the Negamam saree—its iconic checks and stripes—is achieved through precise shuttle-weaving. 
+                    </p>
+<p class="font-body text-md leading-relaxed text-on-surface-variant">
+                        Weavers use multiple shuttles to alternate colored weft yarns against the warp, creating a structural rhythm that requires intense concentration. The result is a 'double-sided' clarity where the pattern remains distinct on both faces of the textile.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Cultural Significance -->
+<section class="mb-32">
+<div class="max-w-4xl mx-auto text-center border-t border-b border-outline-variant/15 py-24 px-8">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="history_edu" style="font-size: 48px;">history_edu</span>
+<h2 class="font-headline text-5xl text-on-surface mb-8 italic">"A Living Heritage of the Kongu Region"</h2>
+<p class="font-body text-xl leading-relaxed text-on-surface-variant">
+                    Beyond its technical merits, the Negamam saree is a cultural anchor. It represents a socio-economic history where clothing was designed for longevity rather than luxury. Even today, it remains the standard-bearer for rural dignity, worn by generations who value the tactile memory of a weave that refuses to fray under the pressures of modern life.
+                </p>
+<div class="mt-12">
+<button class="bg-primary text-on-primary px-10 py-4 font-label font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">
+                        Request Archival Access
+                    </button>
+</div>
+</div>
+</section>
+<!-- Related Specimens -->
+<section>
+<h4 class="font-headline text-3xl mb-10">Archival Comparisons</h4>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-4">
+<div class="p-2 bg-surface-variant">
+<img alt="Coimbatore Cotton" class="w-full h-64 object-cover grayscale" data-alt="Editorial photograph of a Coimbatore cotton saree with subtle border details on a flat beige background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo5mnk-JXh0VYFEx9lJs60UkOubGs3VduQcLIylbXBUA2qzMVTPbdoPpdEVxrQQQLwOx6vm1cl-9d2pQ2cb1BfT3k_UFtR7ut_T865hZP5BDOp_7pjoBfmJo57ZBz3E5RZz2R1zoCd_ZpKQHhTVxy7bKbcbKOnM-5GX0xNMwAlGp3cO3D5s6zuUI48yM_vGK8Cj_2-2PWp3Pk49Mz5qXv0yS-c5_vteKfXpgMd28wlbKEaJRPAKyJx7UFB4S0FUaVgoSB8yQ5S40A"/>
+</div>
+<h5 class="font-headline text-xl">Coimbatore Cotton</h5>
+<p class="text-sm text-on-surface-variant font-body">The finer sibling to Negamam, utilizing 100s-120s thread counts.</p>
+</div>
+<div class="space-y-4">
+<div class="p-2 bg-surface-variant">
+<img alt="Chettinad Kandangi" class="w-full h-64 object-cover grayscale" data-alt="Textured fabric close-up of a rustic checked textile with rich mustard and indigo colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCERF6z_tozc4S5rnA_EjGpxHGlMjwmSMpUYgaBzRnefoR2Rc6mbiriyn0PLmubU7_6KA09cJqoA4SwaJo-owtdtAWtYbNJKZ_-z-c3lDw95vFOet71_qYJZbp3007NX72pG-iDMHh2La5mmiMSZ9OleWUT5ukFveBZ2H8lbeCPoKFVEvzuU3iWP7pIWSM85Fki7VOBwyJHWMpddKhTcj2feI7tlyCm6oFSEPcBCleL-skPmhgONrq281DejWnz9fVXhTOj488Y1C4"/>
+</div>
+<h5 class="font-headline text-xl">Kandangi</h5>
+<p class="text-sm text-on-surface-variant font-body">Exploring the heavier checkered variants of the Chettiar communities.</p>
+</div>
+<div class="space-y-4">
+<div class="p-2 bg-surface-variant">
+<img alt="Thirubhuvanam Silk" class="w-full h-64 object-cover grayscale" data-alt="Abstract view of weaving loom threads under soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-wWnAwV24tmk-ZkF-20XucKY-54th83f2E0c-wNT2vfoObayZrnb-f0tj2uyGJSi1G18xdONNywocirN7ute-6bn4gcvbgd8eBo9WGOF-f7_hb11GYn33H6kGv9DEqMHQ1sTjNfuJr-B1Vx2O9GydJ1_Wv9xuic1Pp0pJNhv92HYr-d_Tt3u4OQc4XNPar3yUtkMnsvSSMAOGe-VTffNTmFyHDGHJYsCbjiDP06DIpqAh8drsG900QQCc1Rmg2_R1-MocSNRfN2w"/>
+</div>
+<h5 class="font-headline text-xl">Thirubhuvanam</h5>
+<p class="text-sm text-on-surface-variant font-body">A contrast in material, focusing on high-density silk ribbing.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#4e0d10] dark:bg-stone-950 w-full px-12 py-16 flex flex-col md:flex-row justify-between items-start gap-8 border-t border-[#dac1bf]/15">
+<div class="flex flex-col gap-6">
+<span class="text-xl font-serif text-[#ffffff]">The Weaver’s Archive</span>
+<p class="text-[#dac1bf] font-sans text-sm max-w-xs leading-relaxed">
+                Dedicated to the preservation and scholarly documentation of India's handloom heritage.
+            </p>
+<p class="text-[#ffffff] font-sans text-xs mt-4">
+                © 2024 Tantu Heritage Archive. All Rights Reserved.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-x-16 gap-y-4">
+<a class="text-[#dac1bf] font-sans text-sm hover:text-[#fdf9ee] transition-all" href="#">Institutional Access</a>
+<a class="text-[#dac1bf] font-sans text-sm hover:text-[#fdf9ee] transition-all" href="#">Archival Policy</a>
+<a class="text-[#dac1bf] font-sans text-sm hover:text-[#fdf9ee] transition-all" href="#">Contact Curator</a>
+<a class="text-[#dac1bf] font-sans text-sm hover:text-[#fdf9ee] transition-all" href="#">Heritage Rights</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#fdf9ee] cursor-pointer" data-icon="library_books">library_books</span>
+<span class="material-symbols-outlined text-[#fdf9ee] cursor-pointer" data-icon="museum">museum</span>
+<span class="material-symbols-outlined text-[#fdf9ee] cursor-pointer" data-icon="share">share</span>
+</div>
+</footer>
+</body></html>

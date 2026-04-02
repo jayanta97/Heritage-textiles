@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Namda: The Art of Felting | The Weaver’s Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "surface": "#fdf9ee",
+                "background": "#fdf9ee",
+                "tertiary-container": "#2d4028",
+                "on-primary-fixed-variant": "#7a2e2d",
+                "on-primary-fixed": "#3f0307",
+                "surface-container": "#f2eee3",
+                "surface-container-high": "#ece8dd",
+                "on-surface-variant": "#544241",
+                "error": "#ba1a1a",
+                "surface-bright": "#fdf9ee",
+                "inverse-surface": "#323129",
+                "on-primary-container": "#ee8a86",
+                "primary-fixed": "#ffdad7",
+                "on-primary": "#ffffff",
+                "error-container": "#ffdad6",
+                "inverse-primary": "#ffb3af",
+                "on-tertiary-container": "#96ac8c",
+                "on-secondary-container": "#785806",
+                "secondary-fixed-dim": "#ebc16a",
+                "secondary-fixed": "#ffdea2",
+                "primary-fixed-dim": "#ffb3af",
+                "outline-variant": "#dac1bf",
+                "outline": "#877271",
+                "on-surface": "#1c1c15",
+                "primary": "#4e0d10",
+                "surface-container-highest": "#e6e2d7",
+                "secondary-container": "#fdd178",
+                "on-tertiary-fixed-variant": "#394c33",
+                "on-secondary": "#ffffff",
+                "primary-container": "#6b2323",
+                "inverse-on-surface": "#f4f0e6",
+                "surface-container-lowest": "#ffffff",
+                "tertiary-fixed-dim": "#b7cdac",
+                "surface-tint": "#984543",
+                "surface-dim": "#dddacf",
+                "on-tertiary-fixed": "#0e200a",
+                "secondary": "#795907",
+                "on-secondary-fixed-variant": "#5c4200",
+                "on-error-container": "#93000a",
+                "on-secondary-fixed": "#261900",
+                "surface-container-low": "#f7f3e8",
+                "on-tertiary": "#ffffff",
+                "on-background": "#1c1c15",
+                "tertiary-fixed": "#d2e9c7",
+                "surface-variant": "#e6e2d7",
+                "on-error": "#ffffff",
+                "tertiary": "#182a14"
+              },
+              fontFamily: {
+                "headline": ["Newsreader"],
+                "body": ["Work Sans"],
+                "label": ["Work Sans"]
+              },
+              borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fdf9ee;
+            color: #1c1c15;
+            -webkit-font-smoothing: antialiased;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .asymmetric-offset {
+            margin-top: -4rem;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body">
+<!-- TopAppBar -->
+<header class="bg-[#fdf9ee] dark:bg-stone-900 border-none sticky top-0 z-50 transition-all duration-300">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-6">
+<button class="text-[#4e0d10] dark:text-[#984543] hover:text-[#795907] transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<div class="text-2xl font-serif italic text-[#4e0d10] dark:text-[#984543]">The Weaver’s Archive</div>
+</div>
+<nav class="hidden md:flex items-center space-x-10 text-sm tracking-widest uppercase font-label">
+<a class="text-[#4e0d10] dark:text-[#984543] font-bold border-b-2 border-[#4e0d10] hover:text-[#795907] transition-all" href="#">The Collection</a>
+<a class="text-[#544241] dark:text-stone-400 hover:text-[#795907] transition-all" href="#">Archival Process</a>
+<a class="text-[#544241] dark:text-stone-400 hover:text-[#795907] transition-all" href="#">Research</a>
+<a class="text-[#544241] dark:text-stone-400 hover:text-[#795907] transition-all" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-[#4e0d10] dark:text-[#984543] hover:text-[#795907] transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</div>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative w-full h-[751px] overflow-hidden">
+<img alt="Detailed close-up of a Namda felted rug" class="w-full h-full object-cover" data-alt="Close-up of a traditional Kashmiri Namda rug featuring intricate hand-embroidered floral motifs in vibrant crimson and gold on cream felted wool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqdNBXZo-3qcnhJLkLK1AeqPm_hkM_9u-vhTjTGGwrnVWI33gS5Dvcb2bDhk0bLtx1bS0ovGmx1kEMyc9YQQztUOUSPyRmz5O-PnczISpBMNPd-xoFAZiiQImdoYZb-XFQ6VjjkV8Oag_3jNNeBkXObNsWc3zSjwKmBPSa1OhLjLbqOlCqJ0OrsTOsevUJ0mdRyftP4NL_wdJva0XJ-ShefywxvWppRJeZ9NJAk3Tnyp5MW7xWtjm_i6tbzLbeyCRhJ-gkKxrE73s"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</section>
+<!-- Title & Caption -->
+<section class="max-w-screen-2xl mx-auto px-8 md:px-16 pt-12 pb-24">
+<div class="editorial-grid">
+<div class="col-span-12 lg:col-span-8 asymmetric-offset bg-surface p-12 lg:p-20 shadow-sm border-l-4 border-primary">
+<span class="text-xs font-label tracking-[0.3em] uppercase text-secondary mb-4 block">Archival Entry № 427</span>
+<h1 class="text-7xl md:text-9xl font-headline text-on-surface leading-tight mb-6 italic">Namda</h1>
+<div class="flex items-center gap-4 border-y border-outline-variant/20 py-4 max-w-fit">
+<span class="text-sm font-label tracking-widest uppercase text-on-surface-variant">Origin:</span>
+<span class="text-xl font-headline italic text-primary">Maharashtra / Kashmir</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Introduction -->
+<section class="max-w-screen-xl mx-auto px-8 md:px-16 py-12 mb-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+<div class="space-y-8">
+<p class="text-2xl md:text-3xl font-headline leading-relaxed text-on-surface border-l-2 border-outline-variant pl-8">
+                        The Namda is a singular anomaly in the Indian textile landscape—a fabric born not from the rhythmic intersection of warp and weft, but through the primal force of pressure and moisture.
+                    </p>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        Originating in the alpine valleys of Kashmir and finding a distinct resonance in the artisan clusters of Maharashtra, the Namda represents one of the oldest forms of textile creation: felting. Unlike woven rugs, the Namda is composed of layers of unspun sheep wool that have been painstakingly matted together.
+                    </p>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        This craft reached its zenith during the Mughal era, where its exceptional thermal properties and plush texture made it the preferred flooring for imperial encampments and palatial winter quarters. Today, it stands as a testament to nomadic resilience and the geometric precision of chain-stitch embroidery.
+                    </p>
+</div>
+<div class="bg-surface-container p-2">
+<img alt="Artisan working on felt" class="w-full grayscale brightness-90 contrast-110" data-alt="An elderly artisan kneeling on a stone floor, using a wooden rolling pin to compact wet wool fibers into a thick felt mat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWyyxAkZDM277oAXgPMt51JFLcCbwRsAuouwuox1KMkGOLUwoswWYep-q4ASh-cibubCGNDin1ARZUBJiaN_oDRxDsqdpCJ90uzzqXiIKxA1JDYgB-1kyqNxh_LdlmG2B3LCtNulkprpWPaHL_-P_WF-SyCg7q5Cit2B6OlQSJ_V3VVFrvxoBgdi8OqM932hnVSP4ZgPQ3UOsUpsS8nUYHA2RG9LZd9rds2cYONZPERXDkqaHXortPPpQjQ63SDMSEJFcF5wpKcyI"/>
+<div class="mt-4 px-4 pb-4">
+<span class="text-xs font-label uppercase tracking-widest text-secondary block mb-1">Fig. 1.1</span>
+<p class="text-sm italic font-headline text-on-surface-variant">The initial compaction phase, where physical friction binds the fibers.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Material Section -->
+<section class="bg-surface-container-low py-32 border-y border-outline-variant/10">
+<div class="max-w-screen-2xl mx-auto px-8 md:px-16">
+<div class="flex flex-col md:flex-row gap-20">
+<div class="md:w-1/3">
+<h2 class="text-4xl font-headline mb-8 italic">The Raw Element</h2>
+<p class="text-on-surface-variant leading-relaxed mb-12">
+                            The integrity of a Namda rug begins with the selection of wool. Curators differentiate between the 'white' Namda, made from pure uncolored fleece, and the more rugged 'grey' variants used for utility.
+                        </p>
+<div class="space-y-6">
+<div class="border-t border-outline-variant/30 pt-4">
+<h4 class="font-label text-xs uppercase tracking-[0.2em] text-primary mb-2">Primary Fiber</h4>
+<p class="text-sm font-body">Locally sourced unspun wool (Sheep or Goat)</p>
+</div>
+<div class="border-t border-outline-variant/30 pt-4">
+<h4 class="font-label text-xs uppercase tracking-[0.2em] text-primary mb-2">Embroidery Yarn</h4>
+<p class="text-sm font-body">Cotton or Silk thread with high-saturation vegetable dyes</p>
+</div>
+</div>
+</div>
+<div class="md:w-2/3 grid grid-cols-2 gap-8">
+<div class="aspect-[4/5] bg-surface overflow-hidden">
+<img alt="Wool fibers" class="w-full h-full object-cover" data-alt="Macro photography of raw, unspun white wool fibers showing fine texture and natural curls on a dark wooden surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX9iHu1EbukER_TUFaNiLWCatW8FchhSoXOQlGvFydjPUImD8WdhNGahmkVECYCoCT3t4r8UPLYCxDx3dRcVDYSZY4OmL2MhOtORY4XCOOUBDXDCGiR4fNBIcXxQKT0bzRm8YwuF45pIcFbBxUSCvt63eztny0a_VA62Q49TEeeBQFkOudtBsTsm9DMkAk8t6Z-xmg6iNHX6m37r9NrNfGV199wSGT-rZyxn2EZGnL4HMPNCGXHtW1ivjtnmKv9p_MQGLjkQaotV4"/>
+</div>
+<div class="aspect-[4/5] bg-surface overflow-hidden mt-12">
+<img alt="Embroidery threads" class="w-full h-full object-cover" data-alt="A collection of colorful silk embroidery threads in deep indigo, madder red, and saffron yellow arranged neatly on a parchment background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-gMemHO-lxS0flqeUzigo_o_6pV2wj2uY2zv-tBueEvcxJ9fS4dw5mrLtDSJKtNckyzeQP-yZkOm3K4CemvFMcE-r8KbayFtw3tnTHWFQZ_TtxC7ITaD1o6T1Z9lFH8fuBIEM13WrSmfvSgkeI5cDVBRd7G54iI3G8NwkxKIz2HstfOAs0UC8btLVL4dVMtPIBidZqluEpFuRZR9vDdNHaKLdopCFX-YkTg_eEdMSAJMpiqDUqQMsnPwqYkX7DcwFDlq13K3vBjQ"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technique Section -->
+<section class="max-w-screen-2xl mx-auto px-8 md:px-16 py-32">
+<div class="text-center mb-20">
+<h2 class="text-5xl font-headline mb-4 italic">The Sequence of Matting</h2>
+<div class="w-24 h-px bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="p-8 border border-outline-variant/20 hover:bg-surface-container transition-colors duration-500">
+<span class="text-4xl font-headline text-primary-fixed-dim block mb-6">01</span>
+<h3 class="text-xl font-label uppercase tracking-widest mb-4">Laying</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">
+                        Layers of wool are spread evenly on a jute mat. The thickness of these layers determines the eventual weight and durability of the archival specimen.
+                    </p>
+</div>
+<div class="p-8 border border-outline-variant/20 hover:bg-surface-container transition-colors duration-500">
+<span class="text-4xl font-headline text-primary-fixed-dim block mb-6">02</span>
+<h3 class="text-xl font-label uppercase tracking-widest mb-4">Moistening</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">
+                        A soapy solution is sprinkled over the fibers. This lubricates the wool scales, allowing them to interlock more effectively when agitated.
+                    </p>
+</div>
+<div class="p-8 border border-outline-variant/20 hover:bg-surface-container transition-colors duration-500">
+<span class="text-4xl font-headline text-primary-fixed-dim block mb-6">03</span>
+<h3 class="text-xl font-label uppercase tracking-widest mb-4">Rolling</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">
+                        The jute mat is rolled tightly and trodden upon or beaten. The combination of heat, moisture, and pressure permanently bonds the fibers into a singular sheet.
+                    </p>
+</div>
+</div>
+<div class="mt-24 bg-primary text-white p-12 lg:p-24 flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2">
+<h3 class="text-4xl font-headline mb-6 italic">Aari: The Post-Felt Adornment</h3>
+<p class="text-on-primary-container leading-relaxed text-lg">
+                        Once the felt is dried, it is handed over to the embroiderers. Using a specialized hook known as the 'Aari', they create dense chain-stitch patterns. In Kashmir, these often take the form of the *Buta* (paisley) or floral vines, while Maharashtra variations often favor more geometric, tribal abstractions.
+                    </p>
+</div>
+<div class="lg:w-1/2">
+<img alt="Aari embroidery detail" class="w-full aspect-video object-cover brightness-110" data-alt="Macro detail of chain-stitch embroidery on a thick felt surface, showing the rhythmic loops of thread creating a vibrant floral pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkpLEbdEpSY5FYhB8nkZ9J-EhkMZXO5VzS9eJlttNN4nqjA-DyHRysiFYaVSWMFkj3L4nwEfVtVXrcMLhxrTQc09vR4dVpKEB3JaL5QNXx1kLod4ur1V6Md8Vv6-rigzQkCwdNC_73awmElWUHKSrEu1EWXiUvRZZ3Kib-FY4r4NUcd1UzKohZUj1uwBH85lAeou27vGGNtqnk59pMtLaXyDclflQJeyERFS_qkalNnHGHzzxDPZUCfe6kMD9EgI66By3vwBkzubU"/>
+</div>
+</div>
+</section>
+<!-- Cultural Significance -->
+<section class="bg-surface-container-highest py-32">
+<div class="max-w-screen-xl mx-auto px-8 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="order-2 lg:order-1">
+<div class="bg-surface p-4 shadow-xl">
+<img alt="Traditional Tent" class="w-full h-[500px] object-cover" data-alt="A traditional interior of a Kashmiri home with large Namda rugs covering the entire floor, low wooden tables, and soft light coming through carved windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9T0xXBkrEg1WSyXE_i6cwoRdx9l7trPDE58MTjDCcEdJjRKvu7urvnUPX-nJiuGMvFFWXJPKBXznzEzedMKPSjNcOdfXE-6FiRV5G8PSqXQGumg-gkDgM7w0ES3z9oZhW2zNcCEqPZfEeFCJXz58r9hGs5BsnsxGGSrUaL52bpWbvOxnIF35T47a6kfQQedZetSURleRIlgw_NlOfPFMWHfUCI-92yM08F-PCulqTQ_-5WFOGZqT-Th5EV-jTzA91HOzPJuyUSW4"/>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-8">
+<span class="text-xs font-label tracking-[0.4em] uppercase text-secondary">Heritage &amp; Context</span>
+<h2 class="text-5xl font-headline italic leading-tight">Floor of the Nomads, Seat of the Sovereigns</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        In the harsh winters of the Deccan plateau or the freezing heights of the Himalayas, the Namda provided more than aesthetic comfort. Its natural insulation was essential for survival in the portable tents of nomadic shepherds.
+                    </p>
+<p class="text-on-surface-variant leading-relaxed">
+                        Today, the craft is preserved by dedicated artisan cooperatives. In Kashmir, the Pinjra-working families often incorporate Namda into their spatial design, while in Maharashtra, it remains a symbol of rural craftsmanship, often showcased in heritage festivals to ensure the technique is not lost to industrial weaving alternatives.
+                    </p>
+<div class="pt-8">
+<button class="bg-primary text-white px-10 py-4 font-label text-sm uppercase tracking-widest hover:bg-primary-container transition-all duration-300">
+                            Download Research Paper (PDF)
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#4e0d10] dark:bg-[#2a0709] border-none">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto mt-0">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-serif text-white mb-2">The Weaver’s Archive</div>
+<p class="text-[#dac1bf] text-xs font-label tracking-widest uppercase">© 2024 The Weaver’s Archive. Preserving the Heritage of Namda.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#dac1bf] text-xs font-label tracking-widest uppercase hover:text-[#d2e9c7] transition-colors duration-200" href="#">The Collection</a>
+<a class="text-[#dac1bf] text-xs font-label tracking-widest uppercase hover:text-[#d2e9c7] transition-colors duration-200" href="#">Archival Process</a>
+<a class="text-[#dac1bf] text-xs font-label tracking-widest uppercase hover:text-[#d2e9c7] transition-colors duration-200" href="#">Research Papers</a>
+<a class="text-[#dac1bf] text-xs font-label tracking-widest uppercase hover:text-[#d2e9c7] transition-colors duration-200" href="#">Contact Curator</a>
+</div>
+<div class="mt-8 md:mt-0 flex gap-4">
+<button class="w-10 h-10 flex items-center justify-center border border-[#dac1bf]/30 text-[#dac1bf] hover:text-white transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center border border-[#dac1bf]/30 text-[#dac1bf] hover:text-white transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+</button>
+</div>
+</div>
+</footer>
+</body></html>

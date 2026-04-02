@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#7a2e2d",
+              "inverse-primary": "#ffb3af",
+              "surface-container": "#f2eee3",
+              "surface": "#fdf9ee",
+              "surface-tint": "#984543",
+              "tertiary": "#182a14",
+              "surface-dim": "#dddacf",
+              "secondary": "#795907",
+              "on-primary-container": "#ee8a86",
+              "background": "#fdf9ee",
+              "tertiary-fixed-dim": "#b7cdac",
+              "surface-bright": "#fdf9ee",
+              "on-primary-fixed": "#3f0307",
+              "surface-variant": "#e6e2d7",
+              "surface-container-low": "#f7f3e8",
+              "inverse-surface": "#323129",
+              "on-background": "#1c1c15",
+              "on-tertiary-fixed": "#0e200a",
+              "tertiary-container": "#2d4028",
+              "on-secondary-container": "#785806",
+              "surface-container-highest": "#e6e2d7",
+              "inverse-on-surface": "#f4f0e6",
+              "surface-container-high": "#ece8dd",
+              "on-tertiary-container": "#96ac8c",
+              "outline-variant": "#dac1bf",
+              "on-primary": "#ffffff",
+              "primary": "#4e0d10",
+              "secondary-fixed": "#ffdea2",
+              "outline": "#877271",
+              "on-surface-variant": "#544241",
+              "secondary-fixed-dim": "#ebc16a",
+              "primary-container": "#6b2323",
+              "primary-fixed": "#ffdad7",
+              "on-secondary-fixed-variant": "#5c4200",
+              "secondary-container": "#fdd178",
+              "tertiary-fixed": "#d2e9c7",
+              "primary-fixed-dim": "#ffb3af",
+              "on-secondary-fixed": "#261900",
+              "on-tertiary-fixed-variant": "#394c33",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#1c1c15",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Work Sans", "sans-serif"],
+              "label": ["Work Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #fdf9ee;
+        color: #1c1c15;
+      }
+      .asymmetric-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-fixed-dim selection:text-primary">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center px-10 py-6 w-full sticky top-0 z-50 backdrop-blur-md bg-opacity-90 bg-[#fdf9ee] dark:bg-stone-900">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#4e0d10] dark:text-[#984543]" data-icon="menu">menu</span>
+</div>
+<div class="text-2xl font-serif text-[#4e0d10] dark:text-[#984543] tracking-tighter">The Weaver’s Archive</div>
+<nav class="hidden md:flex gap-8 font-serif text-[#1c1c15] dark:text-stone-100 uppercase tracking-widest text-xs">
+<a class="text-[#4e0d10] dark:text-[#984543] font-bold hover:text-[#6b2323] transition-colors" href="#">The Collection</a>
+<a class="text-[#544241] dark:text-stone-400 font-normal hover:text-[#6b2323] transition-colors" href="#">Archival Ethics</a>
+<a class="text-[#544241] dark:text-stone-400 font-normal hover:text-[#6b2323] transition-colors" href="#">Conservation</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#4e0d10] dark:text-[#984543]" data-icon="search">search</span>
+</div>
+</header>
+<main class="max-w-screen-2xl mx-auto">
+<!-- Hero Section: Asymmetric Layout -->
+<section class="asymmetric-grid min-h-[707px] pt-12 px-6 md:px-16">
+<div class="col-span-12 md:col-span-5 flex flex-col justify-center order-2 md:order-1 mt-8 md:mt-0">
+<span class="font-label uppercase tracking-[0.3em] text-secondary mb-4 block">Madhya Pradesh</span>
+<h1 class="font-headline text-7xl md:text-9xl text-on-background leading-none font-bold italic -ml-1 md:-ml-2">Maheshwari</h1>
+<div class="mt-12 max-w-sm">
+<p class="font-body text-on-surface-variant leading-relaxed text-lg italic">
+                        "The rhythmic click of the loom in Maheshwar is the heartbeat of a town that has dressed royalty for centuries."
+                    </p>
+</div>
+</div>
+<div class="col-span-12 md:col-span-7 relative order-1 md:order-2 h-[442px] md:h-auto">
+<div class="absolute inset-0 bg-surface-container-high -right-16 -top-8 -bottom-8 hidden md:block"></div>
+<img alt="Maheshwari Silk" class="w-full h-full object-cover relative z-10 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close-up of a high-end Maheshwari saree with vibrant orange and gold silk fibers, showing intricate traditional zari border detail with warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLQ2xq9Xucwpxr5iXBjtWhJENIVhVoDdRsTbMxnHlEu-2hjkqK0joLyLSAUbwqqCo-pDdTrl_gikpEZ3C1mPBvVU_YlO_cB4hmjZ9IJX-sTou2lh104xgEKaqRVL9xEvRMzCYS2kwYa5jpHN_z6PKxuC4RElYNlD8TN7iKDRS_5LEgHXPGsPFie1SYKjfnWoKuyfyNm0iv8yMqRpWfEsIjSkk6q5_fCfWZe0kl8NlUXl5BuZKtcywWPEst3m7gJ3e_vaEx9rUgAWk"/>
+</div>
+</section>
+<!-- Introduction: Editorial Spacing -->
+<section class="py-32 px-6 md:px-16 max-w-4xl mx-auto text-center md:text-left">
+<div class="mb-8">
+<span class="font-label text-xs uppercase tracking-widest text-outline">Introduction</span>
+</div>
+<div class="space-y-8">
+<p class="font-headline text-3xl md:text-4xl leading-snug text-on-surface">
+                    Renowned for its ethereal lightness and distinctive shimmer, the Maheshwari textile is a sophisticated silk-cotton blend that finds its soul in the historic town of Maheshwar, on the banks of the sacred Narmada.
+                </p>
+<p class="font-body text-lg text-on-surface-variant leading-loose">
+                    In the 'Living Atlas' of Indian textiles, Maheshwari occupies a space of quiet elegance. Unlike the heavy opulence of other royal weaves, the Maheshwari is celebrated for its sheer texture and architectural clarity. Originally used primarily for sarees, the fabric's versatility today extends to contemporary couture, yet it remains anchored in its 18th-century heritage.
+                </p>
+</div>
+</section>
+<!-- Material & Technique: Side-by-Side Asymmetry -->
+<section class="py-24 bg-surface-container-low px-6 md:px-16 overflow-hidden">
+<div class="max-w-7xl mx-auto asymmetric-grid">
+<!-- Material -->
+<div class="col-span-12 md:col-span-6 mb-24 md:mb-0">
+<div class="border-l-2 border-primary pl-8 py-4">
+<h2 class="font-headline text-5xl mb-12">The Composition</h2>
+<div class="space-y-12">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-secondary block mb-2">Fiber Blend</span>
+<div class="flex items-baseline gap-4">
+<span class="font-headline text-6xl text-primary">70/30</span>
+<p class="font-body text-on-surface-variant">The signature ratio of fine mulberry silk and mercerized cotton threads, creating a unique tensile strength and luster.</p>
+</div>
+</div>
+<div class="bg-surface p-10 border border-outline-variant border-opacity-20 shadow-sm">
+<h3 class="font-headline text-2xl mb-4 italic">Natural Pigments</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                    Traditional artisans utilize madder root for deep reds, indigo leaves for oceanic blues, and pomegranate rinds for the iconic turmeric golds that define the Madhya Pradesh palette.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Technique Image -->
+<div class="col-span-12 md:col-span-5 md:col-start-8 relative">
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Traditional Handloom" class="w-full h-full object-cover" data-alt="Detailed view of a wooden handloom in an Indian workshop, showing threads under tension with soft sunlight illuminating the dust particles and texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6-RrF2IZk88z_di-SqR195stn5S0Wm6Hnct6li6n43qux-vU5Cgjqj85DZ-vhISSEnkPH0FzNfUXsXrkVmn02nQD4LXY8YlzntAfgMzXbRiwg8Htznj-2wEs3WbN3p1RZc5JVFt-1gSPChsjfEqqsBU3pHXc9SFb-hE8yX3OTQEFfIPa1hD7f5NrT_3kSMc50v2NZ8BKKXRvsu00loIj8hOXsHho52cqLE-XMNfy6gxYZSpNMq3RdrF7VIgsQ_TaO2FJVEy90sWE"/>
+</div>
+<div class="absolute -bottom-12 -left-12 bg-primary text-on-primary p-12 w-64 hidden md:block">
+<span class="font-headline text-3xl italic">The Loom Logic</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Technique Depth -->
+<section class="py-32 px-6 md:px-16">
+<div class="max-w-5xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="font-headline text-5xl mb-8">Reversible Brilliance</h2>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed mb-8">
+                            The most technical marvel of a Maheshwari weave is its 'Bugdi' or reversible border. Unlike standard weaves, the intricate Zari patterns are identical on both sides, a feat achieved through a complex drafting and weaving sequence.
+                        </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="check">check</span>
+<div>
+<span class="font-label font-bold text-on-surface">Aari Work:</span>
+<p class="text-sm text-on-surface-variant mt-1">Intricate needlework often added to the pallu after weaving.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="check">check</span>
+<div>
+<span class="font-label font-bold text-on-surface">Geometric Motifs:</span>
+<p class="text-sm text-on-surface-variant mt-1">Inspired by the stone carvings of Maheshwar Fort.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="bg-surface-variant p-2">
+<img alt="Pattern Detail" class="w-full grayscale hover:grayscale-0 transition-all duration-500" data-alt="Macro photography of intricate gold zari patterns on a dark silk fabric, inspired by architectural temple carvings of Madhya Pradesh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm3cd434Oa5Kc47qLH366ImtmmzFJn_Oe_DwFGxOBZGHAZlZFvZ9yx8n7qElCGbm12MeR4iX5hIXpqnSoD7kUbZOROrmJ_jsOM1hf-D-rtT89rPQaI5cOWGXwwGZXwseClFo_rOt6nKZx4l7UpC7zUSxT-pIcvmr4tAJhXevQxBiAdZMC5IYW9GrfB0y1azbOHenWjOFZcHDTUJGtlyGWguqyRreo21-Z1XpeJ2gUgjTEme1i-qLoyoMw3xHE4vGdz0kwqAuEvs-k"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Cultural Significance: High Impact Full Width -->
+<section class="relative bg-primary text-on-primary py-32 px-6 md:px-16">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="w-full h-full" style="background-image: radial-gradient(circle at 20% 30%, #ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>
+</div>
+<div class="max-w-6xl mx-auto relative z-10">
+<div class="mb-4">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label text-[10px] uppercase tracking-widest px-3 py-1">GI Tagged Heritage</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 items-center">
+<div class="col-span-2">
+<h2 class="font-headline text-6xl md:text-8xl italic mb-10 leading-none">The Holkar Legacy</h2>
+<p class="font-body text-xl md:text-2xl leading-relaxed opacity-90 font-light">
+                            Patronized in the late 18th century by Queen Ahilyabai Holkar, the weave was a gesture of regal entrepreneurship. She invited master weavers from across India to Maheshwar, tasking them to create a fabric that was "as light as the morning mist over the Narmada."
+                        </p>
+</div>
+<div class="text-center md:text-left border-l border-white border-opacity-20 pl-0 md:pl-12">
+<div class="mb-12">
+<span class="font-headline text-5xl block mb-2">1767</span>
+<span class="font-label text-xs uppercase opacity-70 tracking-widest">Year of Establishment</span>
+</div>
+<div>
+<span class="font-headline text-5xl block mb-2">10k+</span>
+<span class="font-label text-xs uppercase opacity-70 tracking-widest">Active Looms Today</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Chapter Nav / Threads -->
+<section class="py-24 px-6 md:px-16">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end border-t border-outline-variant border-opacity-20 pt-12">
+<div>
+<span class="font-label text-xs text-outline-variant mb-4 block">Next Archival Chapter</span>
+<h3 class="font-headline text-4xl hover:text-secondary transition-colors cursor-pointer italic">The Chanderi Connection →</h3>
+</div>
+<div class="mt-8 md:mt-0 text-right">
+<button class="bg-primary text-on-primary px-10 py-5 font-label uppercase tracking-widest text-xs hover:bg-primary-container transition-all">
+                        Download Research PDF
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col md:flex-row justify-between items-center px-16 py-12 w-full mt-24 bg-[#4e0d10] dark:bg-stone-950 text-[#ffffff] dark:text-[#dac1bf]">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-serif italic text-white mb-4">The Weaver’s Archive</div>
+<p class="font-sans text-xs uppercase tracking-widest leading-loose opacity-70">© 2024 The Weaver’s Archive. Preserving the Heritage of the Handloom.</p>
+</div>
+<nav class="flex flex-wrap gap-8 font-sans text-xs uppercase tracking-widest">
+<a class="text-[#dac1bf] opacity-70 hover:opacity-100 hover:text-white transition-all" href="#">The Collection</a>
+<a class="text-[#dac1bf] opacity-70 hover:opacity-100 hover:text-white transition-all" href="#">Archival Ethics</a>
+<a class="text-[#dac1bf] opacity-70 hover:opacity-100 hover:text-white transition-all" href="#">Conservation</a>
+<a class="text-[#dac1bf] opacity-70 hover:opacity-100 hover:text-white transition-all" href="#">Contact</a>
+</nav>
+</footer>
+</body></html>

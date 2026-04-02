@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Negamam Training Programme Gallery | The Weaver’s Archive</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "inverse-surface": "#323129",
+            "surface-dim": "#dddacf",
+            "on-primary-fixed-variant": "#7a2e2d",
+            "tertiary-fixed": "#d2e9c7",
+            "primary-fixed": "#ffdad7",
+            "surface-container-lowest": "#ffffff",
+            "on-primary": "#ffffff",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed-dim": "#b7cdac",
+            "surface-variant": "#e6e2d7",
+            "surface-container-low": "#f7f3e8",
+            "on-secondary-fixed-variant": "#5c4200",
+            "secondary": "#795907",
+            "primary-container": "#6b2323",
+            "surface-tint": "#984543",
+            "primary-fixed-dim": "#ffb3af",
+            "outline": "#877271",
+            "background": "#fdf9ee",
+            "secondary-fixed": "#ffdea2",
+            "on-tertiary-container": "#96ac8c",
+            "on-background": "#1c1c15",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#e6e2d7",
+            "on-secondary-container": "#785806",
+            "on-primary-fixed": "#3f0307",
+            "secondary-container": "#fdd178",
+            "primary": "#4e0d10",
+            "on-error-container": "#93000a",
+            "surface-container": "#f2eee3",
+            "tertiary": "#182a14",
+            "on-primary-container": "#ee8a86",
+            "surface-bright": "#fdf9ee",
+            "surface": "#fdf9ee",
+            "on-surface": "#1c1c15",
+            "outline-variant": "#dac1bf",
+            "on-tertiary-fixed-variant": "#394c33",
+            "error-container": "#ffdad6",
+            "on-tertiary-fixed": "#0e200a",
+            "on-secondary-fixed": "#261900",
+            "inverse-primary": "#ffb3af",
+            "secondary-fixed-dim": "#ebc16a",
+            "on-surface-variant": "#544241",
+            "tertiary-container": "#2d4028",
+            "error": "#ba1a1a",
+            "surface-container-high": "#ece8dd",
+            "on-tertiary": "#ffffff",
+            "inverse-on-surface": "#f4f0e6"
+          },
+          fontFamily: {
+            "headline": ["Newsreader", "serif"],
+            "body": ["Work Sans", "sans-serif"],
+            "label": ["Work Sans", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    body {
+      font-family: 'Work Sans', sans-serif;
+      background-color: #fdf9ee;
+      color: #1c1c15;
+    }
+
+    h1, h2, h3, h4, .font-serif {
+      font-family: 'Newsreader', serif;
+    }
+
+    .thread-divider {
+      height: 0.5px;
+      background-color: #dac1bf;
+      opacity: 0.2;
+      width: 100%;
+    }
+
+    .editorial-shadow {
+      box-shadow: 0 10px 40px -10px rgba(28, 28, 21, 0.06);
+    }
+    
+    /* Image Grid Styling */
+    .gallery-img {
+      cursor: zoom-in;
+    }
+
+    /* Lightbox CSS */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(28, 28, 21, 0.95);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .lightbox.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 0;
+    }
+
+    .lightbox-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 85vh;
+      object-fit: contain;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+
+    .close-lightbox {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      color: #e6e2d7;
+      font-size: 40px;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;
+      transition: color 0.3s;
+      cursor: pointer;
+      z-index: 1001;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .close-lightbox:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body class="bg-surface text-on-surface">
+  
+  <!-- Navigation Header (Simplified Back Link) -->
+  <nav class="bg-surface border-b border-outline-variant/20 py-6 px-8 max-w-screen-2xl mx-auto flex items-center justify-between">
+    <a href="exhibitions.html" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors uppercase tracking-widest text-[11px] font-bold group">
+      <span class="material-symbols-outlined text-lg transition-transform group-hover:-translate-x-1">arrow_back</span>
+      <span>Back to Exhibitions &amp; Events</span>
+    </a>
+    <span class="text-xl font-serif text-[#4e0d10] uppercase tracking-widest italic opacity-80">The Weaver’s Archive</span>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-surface-container-low py-16 px-8 border-b border-outline-variant/20">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="text-primary font-label uppercase tracking-[0.3em] text-[11px] font-bold mb-4 block">Visual Archive</span>
+      <h1 class="text-4xl md:text-6xl font-serif text-on-surface mb-6">Negamam Training Programme Gallery</h1>
+      <div class="w-16 h-[2px] bg-primary/40 mx-auto mb-6"></div>
+      <p class="text-on-surface-variant font-body text-lg max-w-2xl mx-auto leading-relaxed italic">
+        Documentation of the skill upgradation and heritage revival workshop held at the Vadambacheri Weaver’s Cooperative Society.
+      </p>
+    </div>
+  </header>
+
+  <!-- Gallery Grid -->
+  <main class="py-24 px-8 max-w-screen-xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Gallery Item 1 -->
+      <article class="bg-surface-container-high p-4 ring-1 ring-outline/10 editorial-shadow group">
+        <div class="aspect-[4/5] relative overflow-hidden mb-4 bg-surface-variant">
+          <img src="./assets/Negamam training 1.png" alt="Negamam Training Session Wide View" 
+               class="gallery-img w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]"
+               onclick="openLightbox(this.src, this.alt)">
+        </div>
+        <div class="px-2">
+          <p class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest mb-1 border-b border-outline/10 pb-2">Plate 1</p>
+          <p class="font-serif text-sm text-on-surface pt-2">Training Session Overview</p>
+        </div>
+      </article>
+
+      <!-- Gallery Item 2 -->
+      <article class="bg-surface-container-high p-4 ring-1 ring-outline/10 editorial-shadow group">
+        <div class="aspect-[4/5] relative overflow-hidden mb-4 bg-surface-variant">
+          <img src="./assets/Negamam training 2.jpg" alt="Weaving Technique Detail" 
+               class="gallery-img w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]"
+               onclick="openLightbox(this.src, this.alt)">
+        </div>
+        <div class="px-2">
+          <p class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest mb-1 border-b border-outline/10 pb-2">Plate 2</p>
+          <p class="font-serif text-sm text-on-surface pt-2">Weaving Technique Demonstration</p>
+        </div>
+      </article>
+
+      <!-- Gallery Item 3 -->
+      <article class="bg-surface-container-high p-4 ring-1 ring-outline/10 editorial-shadow group">
+        <div class="aspect-[4/5] relative overflow-hidden mb-4 bg-surface-variant">
+          <img src="./assets/Negamam training 3.jpg" alt="Negamam Saree Design Detail" 
+               class="gallery-img w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 hover:scale-[1.03]"
+               onclick="openLightbox(this.src, this.alt)">
+        </div>
+        <div class="px-2">
+          <p class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest mb-1 border-b border-outline/10 pb-2">Plate 3</p>
+          <p class="font-serif text-sm text-on-surface pt-2">Finished Negamam Design Detail</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#2a0a0a] text-[#dac1bf] w-full py-16 px-8 md:px-16 font-body text-center border-t border-[#primary]/20 mt-12">
+    <h2 class="text-2xl font-headline text-white mb-4">Heritage Textiles</h2>
+    <p class="text-xs tracking-wider opacity-60 uppercase mb-8">A Digital Archive Initiative</p>
+    <div class="max-w-sm mx-auto h-[1px] bg-white/10 mb-8"></div>
+    <div class="flex justify-center flex-wrap gap-6 text-[11px] tracking-wider opacity-60 uppercase">
+      <a href="code.html" class="hover:text-white transition-colors">Home Archive</a>
+      <a href="exhibitions.html" class="hover:text-white transition-colors">Exhibitions</a>
+      <span>© 2026 All rights reserved</span>
+    </div>
+  </footer>
+
+  <!-- Lightbox DOM -->
+  <div id="imageLightbox" class="lightbox" onclick="closeLightbox(event)">
+    <span class="close-lightbox" onclick="closeLightbox(event)">&times;</span>
+    <img id="lightboxImg" class="lightbox-content" src="" alt="Expanded View">
+    <div id="lightboxCaption" class="mt-4 font-serif text-[#e6e2d7] text-lg max-w-2xl text-center px-4"></div>
+  </div>
+
+  <!-- Lightbox Script -->
+  <script>
+    const lightbox = document.getElementById("imageLightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const lightboxCaption = document.getElementById("lightboxCaption");
+
+    function openLightbox(src, alt) {
+      lightbox.classList.add("active");
+      lightboxImg.src = src;
+      lightboxCaption.innerText = alt;
+      document.body.style.overflow = "hidden"; // Prevent background scrolling
+    }
+
+    function closeLightbox(event) {
+      if (event.target === lightbox || event.target.classList.contains('close-lightbox')) {
+        lightbox.classList.remove("active");
+        setTimeout(() => {
+          lightboxImg.src = ""; // Clear source after animation to prevent jumping
+          lightboxCaption.innerText = "";
+        }, 300);
+        document.body.style.overflow = "auto";
+      }
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === "Escape" && lightbox.classList.contains("active")) {
+        closeLightbox({ target: lightbox });
+      }
+    });
+  </script>
+
+</body>
+</html>

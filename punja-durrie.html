@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Punja Durrie | The Weaver’s Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "background": "#fdf9ee",
+                        "tertiary-container": "#2d4028",
+                        "surface-container-high": "#ece8dd",
+                        "on-primary-container": "#ee8a86",
+                        "on-primary-fixed-variant": "#7a2e2d",
+                        "surface-container": "#f2eee3",
+                        "on-primary-fixed": "#3f0307",
+                        "on-secondary-fixed-variant": "#5c4200",
+                        "primary-container": "#6b2323",
+                        "on-tertiary-fixed": "#0e200a",
+                        "on-surface-variant": "#544241",
+                        "tertiary-fixed-dim": "#b7cdac",
+                        "on-tertiary-fixed-variant": "#394c33",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#785806",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#261900",
+                        "primary": "#4e0d10",
+                        "tertiary": "#182a14",
+                        "surface-variant": "#e6e2d7",
+                        "inverse-surface": "#323129",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f7f3e8",
+                        "outline-variant": "#dac1bf",
+                        "on-primary": "#ffffff",
+                        "surface": "#fdf9ee",
+                        "secondary": "#795907",
+                        "on-surface": "#1c1c15",
+                        "surface-tint": "#984543",
+                        "secondary-fixed": "#ffdea2",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#ebc16a",
+                        "primary-fixed-dim": "#ffb3af",
+                        "outline": "#877271",
+                        "on-tertiary-container": "#96ac8c",
+                        "surface-container-highest": "#e6e2d7",
+                        "primary-fixed": "#ffdad7",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1c1c15",
+                        "tertiary-fixed": "#d2e9c7",
+                        "secondary-container": "#fdd178",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#fdf9ee",
+                        "inverse-on-surface": "#f4f0e6",
+                        "surface-dim": "#dddacf",
+                        "inverse-primary": "#ffb3af"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fdf9ee;
+            color: #1c1c15;
+            font-family: 'Work Sans', sans-serif;
+        }
+        .serif-text { font-family: 'Newsreader', serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-[#f7f3e8] transition-colors duration-300 sticky top-0 z-50">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#4e0d10] cursor-pointer scale-95 duration-150 ease-in-out hover:text-[#4e0d10]">menu</span>
+<span class="text-2xl font-serif tracking-tight text-[#4e0d10]">The Weaver’s Archive</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#4e0d10] font-semibold border-b-2 border-[#4e0d10] hover:text-[#4e0d10] transition-all" href="#">The Collection</a>
+<a class="text-[#544241] font-medium hover:text-[#4e0d10] transition-all" href="#">Archival Process</a>
+<a class="text-[#544241] font-medium hover:text-[#4e0d10] transition-all" href="#">Institutional Ethics</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#4e0d10] cursor-pointer scale-95 duration-150 ease-in-out">search</span>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section: Asymmetric Layout -->
+<section class="relative w-full min-h-[707px] flex flex-col md:flex-row items-center bg-surface overflow-hidden">
+<div class="w-full md:w-7/12 h-[442px] md:h-[707px] relative">
+<img alt="Punja Durrie" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="Close-up of a vibrant geometric Punja Durrie rug with heavy cotton weave, intricate patterns in madder red and indigo, professional studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArrttnkOuaZJOBngavSRP2mUUJvDPBFcTKv95zUnBwzh2FgQL-qMNejKOkSOkZhpJS4H75RON2E055t3Rf9MtQVhRaGQcYSM9wcFGSvbU_hlOKPTgoiIwPkRebODOyqyJlbm_ek8LvkIHqZieAjlv_-vW0OwHi7i9JQ4LZCzNTToSve_P1pZguRK8VahurX-eGWCmLrjH68gN6x2kCHlzcnMWAfcwWt61No5xSUYVG8utJyxfneTH9CWuAF9Fucl43suV8MFuNKaE"/>
+</div>
+<div class="w-full md:w-5/12 p-8 md:p-16 flex flex-col justify-center">
+<span class="font-label text-secondary uppercase tracking-[0.2em] text-sm mb-4">Origin: Uttar Pradesh, India</span>
+<h1 class="serif-text text-6xl md:text-8xl text-primary leading-none mb-6">Punja Durrie</h1>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed max-w-md">
+                    An architectural study of one of India’s most resilient flat-weave traditions, characterized by its heavy handle and bold, geometric vernacular.
+                </p>
+</div>
+</section>
+<!-- Intro Content: Editorial Columns -->
+<section class="py-24 px-8 max-w-screen-xl mx-auto border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="md:col-span-1">
+<h2 class="serif-text text-3xl text-primary mb-8 italic">Archival Narrative</h2>
+<div class="w-12 h-[1px] bg-primary mb-8"></div>
+</div>
+<div class="md:col-span-2 space-y-8">
+<p class="font-body text-xl text-on-surface leading-relaxed first-letter:text-5xl first-letter:font-serif first-letter:mr-3 first-letter:float-left first-letter:text-primary">
+                        The Punja Durrie represents the zenith of utilitarian textile art in North India. Historically rooted in the rural hearths of Uttar Pradesh, these rugs were never merely floor coverings; they were foundational elements of the Indian domestic landscape. Each piece is a testament to the weaver's ability to translate complex mathematical symmetry into a physical form that withstands generations of use.
+                    </p>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                        Unlike the delicate silks of the royal courts, the Durrie belongs to the earth. Its heavy cotton and wool construction serves as a thermal barrier against the cold floors of winter and the rising heat of summer. The aesthetic language is often dictated by the constraints of the horizontal loom, resulting in a distinct visual vocabulary of stripes, lozenges, and "shakarpara" (diamond) motifs that resonate with modern minimalist design.
+                    </p>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                        In the weaver’s archive, the Punja Durrie is classified as a "living artifact." While the motifs have evolved to include more contemporary interpretations, the core structural integrity remains unchanged. This durability is the result of a primitive yet powerful mechanical intervention during the weaving process, ensuring each thread is locked into place with absolute finality.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Material & Technique: Split Bento -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/30">
+<!-- Material Section -->
+<div class="bg-surface-container-low p-12 md:p-20">
+<span class="material-symbols-outlined text-primary mb-6" style="font-size: 40px;">texture</span>
+<h3 class="serif-text text-4xl text-on-surface mb-8">Composition &amp; Pigment</h3>
+<p class="font-body text-on-surface-variant mb-12 text-lg">
+                        The integrity of a Punja Durrie is defined by the quality of its raw materials. We use high-micron count hand-spun cotton and local wool yarns, providing a tactile roughness that is synonymous with authentic heritage pieces.
+                    </p>
+<ul class="space-y-6">
+<li class="flex items-baseline gap-4">
+<span class="font-label text-secondary font-bold text-xs uppercase tracking-widest">Base</span>
+<span class="font-body text-on-surface">Thick ply cotton yarn for warp stability.</span>
+</li>
+<li class="flex items-baseline gap-4">
+<span class="font-label text-secondary font-bold text-xs uppercase tracking-widest">Fill</span>
+<span class="font-body text-on-surface">Blended wool for warmth and structural memory.</span>
+</li>
+<li class="flex items-baseline gap-4">
+<span class="font-label text-secondary font-bold text-xs uppercase tracking-widest">Dye</span>
+<span class="font-body text-on-surface">Robust natural pigments including Indigo, Madder, and Turmeric.</span>
+</li>
+</ul>
+</div>
+<!-- Technique Section -->
+<div class="bg-surface-container-low p-12 md:p-20 border-l border-outline-variant/30">
+<span class="material-symbols-outlined text-primary mb-6" style="font-size: 40px;">precision_manufacturing</span>
+<h3 class="serif-text text-4xl text-on-surface mb-8">The Punja Instrument</h3>
+<p class="font-body text-on-surface-variant mb-12 text-lg">
+                        Named after the 'Punja'—a heavy, claw-like metallic fork—the technique requires immense physical strength. The weaver uses this tool to beat the weft threads down into the warp, creating a density that makes the rug nearly indestructible.
+                    </p>
+<div class="relative w-full aspect-video bg-surface-variant">
+<img alt="Weaving Technique" class="w-full h-full object-cover" data-alt="Detailed close-up of a weaver's hand using a traditional metal punja tool to pack yarn on a heavy loom, natural light, workshop setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQcrfSauTUXOUbESyJg6MTvn_GDQD-_JpHv0PGEeVqhRt471KWRpKox_HAcbMuzpba6W0D5F7D3MSAhgqIqNoJV8qAYwR9obgyBFG4HL8xKkDBwobQqeNEQTtfdj_Exo8hCDxNCuof0Ftj2vxbK-NYXCLr7d-QXUSoIMHkqlUmt9tS1qZD52tDaIgYu1yOuQG0QqSvHJBD8KX3Hu7ygUdP2vN9R3U6AbRZlPR2E-CD5f1ZmfNWYvOz3VYNM96thwNrlN0AHLJUJA0"/>
+<div class="absolute bottom-4 left-4 bg-primary text-white px-4 py-2 text-xs font-label tracking-widest uppercase">
+                            Archival Detail: The Packing Motion
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cultural Significance: Full Width Focus -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-4xl mx-auto text-center">
+<h4 class="font-label text-secondary text-sm uppercase tracking-[0.4em] mb-6">Cultural Ethos</h4>
+<h2 class="serif-text text-5xl md:text-6xl text-on-surface mb-10 leading-tight">A Symbol of Enduring Indian Craftsmanship</h2>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed mb-12">
+                    In the Indian household, the Punja Durrie transcends its role as furniture. It is a social anchor—laid out for village meetings, wedding feasts, and daily prayers. Its durability is a metaphor for the resilience of the weaver communities in Uttar Pradesh, surviving industrialization by adhering to the slow, rhythmic strike of the punja.
+                </p>
+<div class="inline-flex items-center gap-6 border border-outline px-10 py-5">
+<span class="tertiary-fixed text-on-tertiary-fixed px-3 py-1 text-[10px] font-label font-bold uppercase tracking-tighter">GI Tagged Heritage</span>
+<span class="text-on-surface-variant font-body italic">Certified Authentic Origin: Mirzapur Archive</span>
+</div>
+</div>
+</section>
+<!-- Gallery / Specimens -->
+<section class="pb-24 px-8 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-2 aspect-square bg-surface-container flex items-center justify-center p-4">
+<img alt="Specimen 01" class="w-full h-full object-cover grayscale-[10%]" data-alt="Abstract geometric pattern of a traditional Indian rug in earth tones, symmetry and texture detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkgQCTj_hyvaBALEalKVQAG-Z6ZSyzulPk5Cax6aUIUFiObyDD2HlmwR_aBHK5Kx0KUPf-xm_gJmO7o2cXwQPURqDD1VBQmVHPVy0PLzgfHkneBy-PDqUlEc-eIkQycZe6sjMp2JLp-doY1N_r-jbYkTmAF_ENiuxqgnW6MjOgcLMoOW3m0mmGnjKtpEsHEqBGGhmWTAvfNxX3gXhApsNTQudxr_oM-U3dhEwKN6lcTRIp_OUmQw616QvARLznQvl9YT97zM1bxFA"/>
+</div>
+<div class="md:col-span-1 aspect-[3/4] bg-surface-container flex items-center justify-center p-4">
+<img alt="Specimen 02" class="w-full h-full object-cover grayscale-[10%]" data-alt="Stack of folded handwoven durries in various shades of indigo and terracotta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsEvC1Zz4xG5cuhSUwPzdOhH9W7VuFkBVzpLD21ypmp33deTWafdY9S-q6Gb5dN3x5U1awRCSqkBEsVcssBQZkyi8D-QnleoMdfCCRphonqhUX76kr8oUuRx-eauIuZG_xEgVxBC_R7Loo7FHBBb5blNjICzCeyXCFZIq2qRFzFAweHDgBJRgydV4DXjtm5y_awFIqNNliafl3oL-W7jRq21t-Bk2wz2y6euvUmzjhvu-lohvkDcamvIOmp1YT1Q_whYHa9pCJ9Lo"/>
+</div>
+<div class="md:col-span-1 flex flex-col justify-end p-8 border border-outline-variant/40">
+<p class="serif-text text-2xl mb-4 italic">“The weave is the memory of the hands.”</p>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">— Curatorial Note, 1974</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#4e0d10] text-[#ffffff] font-sans text-xs tracking-widest uppercase">
+<div class="w-full px-12 py-16 flex flex-col md:flex-row justify-between items-center gap-8 max-w-screen-2xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-serif text-lg text-[#ffffff]">Tantu Heritage Archive</span>
+<p class="opacity-80">© 2024 Tantu Heritage Archive. All rights reserved.</p>
+</div>
+<div class="flex gap-8 flex-wrap justify-center">
+<a class="text-[#dac1bf] hover:text-white transition-colors" href="#">The Collection</a>
+<a class="text-[#dac1bf] hover:text-white transition-colors" href="#">Archival Process</a>
+<a class="text-[#dac1bf] hover:text-white transition-colors" href="#">Institutional Ethics</a>
+<a class="text-[#dac1bf] hover:text-white transition-colors" href="#">Contact Curator</a>
+</div>
+</div>
+<div class="text-center pb-8 opacity-40 text-[10px]">
+            Preserving the threads of time.
+        </div>
+</footer>
+</body></html>

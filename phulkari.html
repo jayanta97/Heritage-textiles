@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Phulkari | The Weaver’s Archive</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#544241",
+              "surface-tint": "#984543",
+              "secondary": "#795907",
+              "on-tertiary-fixed": "#0e200a",
+              "on-secondary": "#ffffff",
+              "primary-fixed-dim": "#ffb3af",
+              "on-tertiary-container": "#96ac8c",
+              "surface-container-low": "#f7f3e8",
+              "surface-container-highest": "#e6e2d7",
+              "outline": "#877271",
+              "on-error-container": "#93000a",
+              "tertiary-fixed": "#d2e9c7",
+              "secondary-fixed": "#ffdea2",
+              "surface-container": "#f2eee3",
+              "primary-fixed": "#ffdad7",
+              "inverse-surface": "#323129",
+              "tertiary": "#182a14",
+              "primary": "#4e0d10",
+              "on-secondary-container": "#785806",
+              "tertiary-container": "#2d4028",
+              "on-primary-container": "#ee8a86",
+              "on-tertiary": "#ffffff",
+              "on-background": "#1c1c15",
+              "surface": "#fdf9ee",
+              "on-secondary-fixed": "#261900",
+              "surface-bright": "#fdf9ee",
+              "on-primary": "#ffffff",
+              "primary-container": "#6b2323",
+              "tertiary-fixed-dim": "#b7cdac",
+              "secondary-fixed-dim": "#ebc16a",
+              "surface-container-high": "#ece8dd",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#dddacf",
+              "secondary-container": "#fdd178",
+              "on-secondary-fixed-variant": "#5c4200",
+              "on-primary-fixed-variant": "#7a2e2d",
+              "inverse-primary": "#ffb3af",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#3f0307",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed-variant": "#394c33",
+              "inverse-on-surface": "#f4f0e6",
+              "on-surface": "#1c1c15",
+              "outline-variant": "#dac1bf",
+              "background": "#fdf9ee",
+              "surface-variant": "#e6e2d7"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Work Sans", "sans-serif"],
+              "label": ["Work Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            background-color: #fdf9ee;
+            color: #1c1c15;
+            font-family: 'Work Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3, .serif-font {
+            font-family: 'Newsreader', serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-[#fdf9ee] dark:bg-[#1c1c15] fixed top-0 left-0 right-0 z-50">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#4e0d10] dark:text-[#984543] cursor-pointer" data-icon="menu">menu</span>
+<span class="text-2xl font-serif text-[#4e0d10] dark:text-[#fdf9ee] uppercase tracking-widest">The Weaver’s Archive</span>
+</div>
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex gap-8">
+<span class="text-[#544241] dark:text-[#dac1bf] hover:text-[#795907] transition-colors duration-300 font-sans uppercase text-xs tracking-widest cursor-pointer">The Heritage</span>
+<span class="text-[#4e0d10] dark:text-[#984543] font-bold font-sans uppercase text-xs tracking-widest cursor-pointer">Archives</span>
+<span class="text-[#544241] dark:text-[#dac1bf] hover:text-[#795907] transition-colors duration-300 font-sans uppercase text-xs tracking-widest cursor-pointer">Techniques</span>
+</nav>
+<span class="material-symbols-outlined text-[#4e0d10] dark:text-[#984543] cursor-pointer" data-icon="search">search</span>
+</div>
+</div>
+<div class="bg-[#f7f3e8] dark:bg-[#2a2a24] h-[1px] w-full"></div>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative w-full h-[618px] md:h-[751px] overflow-hidden">
+<img alt="Vibrant Phulkari embroidery" class="w-full h-full object-cover" data-alt="Detailed close-up of vibrant Phulkari embroidery featuring geometric patterns in bright orange, yellow, and deep red silk thread on coarse rust-colored fabric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALKo47UAbI12Qbf2i_e2inRptIOLIw03Qjk-b00j9W6JA1R5HgEG7vBGp8yelx_zoNqY0bSvqsNRGLZz4r7Td8DMEXkvUPyE0fgxl2X-clVHKgW9z67BXp8syMwdZtcuQ_4HGUxzakeumsscuUHYjRzRbExQg7vmAHFGp4U6HYKU5UCvbUy-izZEFZ6SfJa1FpJNLDTqrsIrvnq66T-bseQHkCr9OkKhK93DES-SBU1z6Olx6k9HcGfGA4AY8HFHRYy_80pcsQomg"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</section>
+<!-- Title & Subtitle -->
+<section class="px-8 md:px-24 py-16 md:py-24 max-w-screen-xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12">
+<h1 class="text-7xl md:text-9xl font-headline font-light italic text-primary leading-none tracking-tight">Phulkari</h1>
+<span class="text-xl md:text-3xl font-headline italic text-on-surface-variant opacity-70">Punjab, Northern India</span>
+</div>
+<div class="mt-8 w-24 h-1 bg-primary"></div>
+</section>
+<!-- Introduction: Triple Paragraph Layout -->
+<section class="px-8 md:px-24 pb-24 max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6">
+<p class="text-lg leading-relaxed font-body">
+                    Phulkari, which literally translates to 'flower work', is more than an embroidery style; it is an emotional cartography of Punjab. For centuries, it has been the silent witness to the joys and sorrows of Punjabi households, stitched by grandmothers and mothers for the next generation.
+                </p>
+</div>
+<div class="space-y-6">
+<p class="text-lg leading-relaxed font-body">
+                    Historically, a girl's birth marked the beginning of her mother's journey in crafting a 'Bagh' (garden). This intricate shawl would eventually wrap the girl during her wedding, a heavy, silk-laden fabric that carried the weight of her lineage and the blessings of her ancestors.
+                </p>
+</div>
+<div class="space-y-6">
+<p class="text-lg leading-relaxed font-body">
+                    The Archive classifies Phulkari as a 'social fabric'. Unlike commercial textiles, true archival Phulkari was never intended for sale. It was a private meditation, a communal activity performed in the 'Trinjan'—the courtyard where women gathered to spin and stitch.
+                </p>
+</div>
+</section>
+<!-- Material & Fiber: Technical Specimen -->
+<section class="bg-surface-container-low py-24 px-8 md:px-24">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<h2 class="text-4xl font-headline text-primary mb-8 italic">The Materiality of Soul</h2>
+<div class="space-y-12">
+<div>
+<h3 class="font-label uppercase tracking-widest text-xs font-bold mb-4 flex items-center gap-2">
+<span class="w-2 h-2 bg-secondary"></span> Khaddar: The Ground
+                            </h3>
+<p class="font-body text-on-surface-variant leading-loose">
+                                The base fabric is hand-spun, hand-woven cotton known as <span class="italic text-on-surface">Khaddar</span>. Chosen for its coarse texture and durability, it symbolizes the grounded, agrarian roots of Punjab. It is traditionally dyed using madder root or indigo.
+                            </p>
+</div>
+<div>
+<h3 class="font-label uppercase tracking-widest text-xs font-bold mb-4 flex items-center gap-2">
+<span class="w-2 h-2 bg-secondary"></span> Pat: The Luster
+                            </h3>
+<p class="font-body text-on-surface-variant leading-loose">
+                                Contrastingly, the embroidery uses <span class="italic text-on-surface">Pat</span>—untwisted silk floss. This thread provides a brilliant, glass-like sheen that catches light differently depending on the direction of the stitch, creating an optical depth.
+                            </p>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 bg-surface p-4 border border-outline-variant/15">
+<img alt="Khaddar fabric and silk thread" class="w-full aspect-square object-cover" data-alt="Macro photography of raw hand-spun cotton khaddar fabric next to hanks of untwisted silk floss in brilliant gold and magenta tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBirG2f_RBO03xiYVmRNkafcqduUR_cbdvyOrI83chGPkEwEMza913OjLqaCcXYVEUKOjIXUW6a7RRWI4FXTv8imvP6xDz0KWB5Gg1j608ks78b8rQcxFcyL_gnZtKkt2n2kfh9isDYrrK2Cf2zO-U3myTGp4Oy1AY-jNzTBBFJAH7fDJ4_K4pXq0Z60vb7fvWchQYpTcooWqaMAnMApXTNcvWf577uVkXXjAUX-HBBIFxsKui1UP3E2DY1lmBPYT1gsiG2Se3Zlgk"/>
+</div>
+</div>
+</section>
+<!-- The Craft: Technical Insight -->
+<section class="px-8 md:px-24 py-24 max-w-screen-xl mx-auto">
+<div class="flex flex-col md:flex-row gap-16">
+<div class="md:w-1/3">
+<h2 class="text-5xl font-headline text-primary italic leading-tight">The Geometry of Silence</h2>
+<p class="mt-8 font-label text-xs uppercase tracking-[0.3em] text-secondary font-semibold">Stitching from the Reverse</p>
+</div>
+<div class="md:w-2/3 space-y-8">
+<p class="text-xl font-body leading-relaxed text-on-surface">
+                        The mastery of Phulkari lies in its counter-intuitive execution. The artisan works from the <span class="font-semibold">reverse side</span> of the fabric. By counting the threads of the Khaddar, they guide the needle to create a pattern that only fully reveals itself on the front.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+<div class="border-l border-outline-variant/30 pl-6">
+<h4 class="font-headline italic text-2xl mb-2">The Darning Stitch</h4>
+<p class="font-body text-sm text-on-surface-variant">A simple yet rigorous longitudinal stitch. Its length and density determine the luminosity of the finished piece.</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-6">
+<h4 class="font-headline italic text-2xl mb-2">No Tracing</h4>
+<p class="font-body text-sm text-on-surface-variant">Patterns are never drawn onto the fabric. They are held entirely in the mind’s eye, a feat of mental mathematics and spatial memory.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cultural Significance: Bento Grid -->
+<section class="bg-primary py-24 px-8 md:px-24 text-white">
+<div class="max-w-screen-xl mx-auto">
+<h2 class="text-4xl font-headline italic mb-16 text-center text-primary-fixed">The Living Archive</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Bagh Column -->
+<div class="md:col-span-7 bg-[#2a080a] p-12 flex flex-col justify-between min-h-[400px]">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-primary-fixed-dim">Type: Bagh</span>
+<h3 class="text-4xl font-headline italic mt-4 mb-6">The Garden of Infinity</h3>
+<p class="font-body text-on-primary-container leading-relaxed">
+                                A 'Bagh' is a Phulkari where the embroidery is so dense that the base fabric is completely invisible. It represents a garden in full bloom, symbolizing fertility, prosperity, and the boundless love of a mother.
+                            </p>
+</div>
+<div class="mt-8 flex items-center gap-4 cursor-pointer hover:translate-x-2 transition-transform">
+<span class="font-label text-sm uppercase tracking-widest">Explore the Bagh Collection</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Heritage Image -->
+<div class="md:col-span-5 relative group overflow-hidden">
+<img alt="Punjabi heritage" class="w-full h-full object-cover grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700" data-alt="Atmospheric archival-style portrait of an elderly Punjabi woman with deep-set eyes, draped in a traditional embroidered shawl, soft sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-eRtVELOTB9iTQAItagu0UEX1XE_e0DgqLZWyA32xf1qQLl1-l4c9M0uqO6sWpbMljB4V2T9SzYSsoEXRt4hNcC9dEsG8fOjPNTKano4ZNh89JUU9Jab0jQ_WH5mvKeJIvy_usb6A-7oGHKSLoMApNEgRTEcOQNIaXC7DvnGnt-7a6k30ZURTZpZH6If1ooLWwk7qwgPNKGyGnOE8yx4p2gWUrlw5G81UwgKJmxXizDYMayKzsIV6vaxQwucZXzlTBJN0I2lmHcY"/>
+</div>
+<!-- Intergenerational Card -->
+<div class="md:col-span-4 bg-[#fdf9ee] p-10 text-primary">
+<h4 class="font-headline text-3xl italic mb-4">Intergenerational</h4>
+<p class="font-body text-sm leading-relaxed text-on-surface">
+                            Knowledge was passed from mother to daughter without formal instruction, embedded in the rhythm of daily life and communal song.
+                        </p>
+</div>
+<!-- Wedding Rituals -->
+<div class="md:col-span-8 bg-surface-tint p-10 text-white flex items-center justify-between">
+<div class="max-w-md">
+<h4 class="font-headline text-3xl italic mb-4">The Wedding Canopy</h4>
+<p class="font-body text-sm leading-relaxed opacity-90">
+                                During the ceremony, the maternal uncles hold a Phulkari over the bride's head as she enters her new home—a protective shield of heritage.
+                            </p>
+</div>
+<span class="material-symbols-outlined text-5xl opacity-30" data-icon="auto_awesome">auto_awesome</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Credit Section (from NavDrawer intent) -->
+<section class="py-24 px-8 md:px-24 max-w-screen-md mx-auto text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="account_balance">account_balance</span>
+<h2 class="text-2xl font-headline italic text-primary mb-4">Institutional Recognition</h2>
+<p class="font-body text-on-surface-variant leading-relaxed italic">
+                This entry is maintained in collaboration with the Punjab Heritage &amp; Tourism Promotion Board. All specimens shown are part of the permanent collection of the Virasat-e-Khalsa museum.
+            </p>
+</section>
+</main>
+<!-- NavigationDrawer (Simulated as a side panel for desktop/mobile interaction) -->
+<aside class="fixed inset-y-0 left-0 z-[60] w-80 p-10 bg-[#fdf9ee] dark:bg-[#1c1c15] shadow-[40px_0_40px_rgba(28,28,21,0.06)] transform -translate-x-full transition-all duration-300 ease-in-out border-r border-[#dac1bf]/15">
+<div class="mb-12">
+<h2 class="text-xl font-serif text-[#4e0d10] dark:text-[#fdf9ee] mb-2">Archival Collections</h2>
+<div class="h-0.5 w-12 bg-primary"></div>
+</div>
+<nav class="space-y-8">
+<div class="flex items-center gap-4 text-[#544241] dark:text-[#dac1bf] pl-4 hover:bg-[#f7f3e8] dark:hover:bg-[#2a2a24] py-2 cursor-pointer transition-all">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<span class="font-sans uppercase text-xs tracking-widest">The Heritage</span>
+</div>
+<div class="flex items-center gap-4 text-[#4e0d10] dark:text-[#fdf9ee] font-semibold border-l-2 border-[#4e0d10] pl-4 hover:bg-[#f7f3e8] dark:hover:bg-[#2a2a24] py-2 cursor-pointer transition-all">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-sans uppercase text-xs tracking-widest">Archives</span>
+</div>
+<div class="flex items-center gap-4 text-[#544241] dark:text-[#dac1bf] pl-4 hover:bg-[#f7f3e8] dark:hover:bg-[#2a2a24] py-2 cursor-pointer transition-all">
+<span class="material-symbols-outlined" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="font-sans uppercase text-xs tracking-widest">Techniques</span>
+</div>
+<div class="flex items-center gap-4 text-[#544241] dark:text-[#dac1bf] pl-4 hover:bg-[#f7f3e8] dark:hover:bg-[#2a2a24] py-2 cursor-pointer transition-all">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-sans uppercase text-xs tracking-widest">Maps</span>
+</div>
+<div class="flex items-center gap-4 text-[#544241] dark:text-[#dac1bf] pl-4 hover:bg-[#f7f3e8] dark:hover:bg-[#2a2a24] py-2 cursor-pointer transition-all">
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+<span class="font-sans uppercase text-xs tracking-widest">Institutional Credits</span>
+</div>
+</nav>
+</aside>
+<!-- Footer -->
+<footer class="bg-[#4e0d10] dark:bg-[#2a080a] py-20 px-12 mt-20 border-t border-[#ffffff]/10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-end w-full max-w-screen-2xl mx-auto">
+<div>
+<p class="text-[#ffffff] font-serif italic text-lg mb-4">The Weaver’s Archive</p>
+<p class="text-[#ffffff] font-sans text-[11px] uppercase tracking-[0.2em] leading-relaxed opacity-70">
+                    © 2024 The Weaver’s Archive. Preserving the rhythm of the handloom. Supported by the National Heritage Council.
+                </p>
+</div>
+<div class="flex flex-wrap md:justify-end gap-x-8 gap-y-4">
+<a class="text-[#ffffff]/70 hover:text-[#ffffff] transition-opacity font-sans text-[11px] uppercase tracking-[0.2em]" href="#">Curatorial Statement</a>
+<a class="text-[#ffffff]/70 hover:text-[#ffffff] transition-opacity font-sans text-[11px] uppercase tracking-[0.2em]" href="#">Accession Policy</a>
+<a class="text-[#ffffff]/70 hover:text-[#ffffff] transition-opacity font-sans text-[11px] uppercase tracking-[0.2em]" href="#">Privacy Registry</a>
+<a class="text-[#ffffff] underline underline-offset-8 font-sans text-[11px] uppercase tracking-[0.2em]" href="#">Contact Curator</a>
+</div>
+</div>
+</footer>
+</body></html>
