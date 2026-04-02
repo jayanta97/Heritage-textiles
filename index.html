@@ -1,0 +1,592 @@
+    <!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Weaver’s Archive | A Living Atlas of Indian Handloom Traditions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "inverse-surface": "#323129",
+                "surface-dim": "#dddacf",
+                "on-primary-fixed-variant": "#7a2e2d",
+                "tertiary-fixed": "#d2e9c7",
+                "primary-fixed": "#ffdad7",
+                "surface-container-lowest": "#ffffff",
+                "on-primary": "#ffffff",
+                "on-secondary": "#ffffff",
+                "tertiary-fixed-dim": "#b7cdac",
+                "surface-variant": "#e6e2d7",
+                "surface-container-low": "#f7f3e8",
+                "on-secondary-fixed-variant": "#5c4200",
+                "secondary": "#795907",
+                "primary-container": "#6b2323",
+                "surface-tint": "#984543",
+                "primary-fixed-dim": "#ffb3af",
+                "outline": "#877271",
+                "background": "#fdf9ee",
+                "secondary-fixed": "#ffdea2",
+                "on-tertiary-container": "#96ac8c",
+                "on-background": "#1c1c15",
+                "on-error": "#ffffff",
+                "surface-container-highest": "#e6e2d7",
+                "on-secondary-container": "#785806",
+                "on-primary-fixed": "#3f0307",
+                "secondary-container": "#fdd178",
+                "primary": "#4e0d10",
+                "on-error-container": "#93000a",
+                "surface-container": "#f2eee3",
+                "tertiary": "#182a14",
+                "on-primary-container": "#ee8a86",
+                "surface-bright": "#fdf9ee",
+                "surface": "#fdf9ee",
+                "on-surface": "#1c1c15",
+                "outline-variant": "#dac1bf",
+                "on-tertiary-fixed-variant": "#394c33",
+                "error-container": "#ffdad6",
+                "on-tertiary-fixed": "#0e200a",
+                "on-secondary-fixed": "#261900",
+                "inverse-primary": "#ffb3af",
+                "secondary-fixed-dim": "#ebc16a",
+                "on-surface-variant": "#544241",
+                "tertiary-container": "#2d4028",
+                "error": "#ba1a1a",
+                "surface-container-high": "#ece8dd",
+                "on-tertiary": "#ffffff",
+                "inverse-on-surface": "#f4f0e6"
+              },
+              fontFamily: {
+                "headline": ["Newsreader", "serif"],
+                "body": ["Work Sans", "sans-serif"],
+                "label": ["Work Sans", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: #fdf9ee;
+            color: #1c1c15;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Newsreader', serif;
+        }
+        .textile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+}
+
+        .thread-divider {
+            height: 0.5px;
+            background-color: #dac1bf;
+            opacity: 0.2;
+            width: 100%;
+        }
+        .editorial-shadow {
+            box-shadow: 0 10px 40px -10px rgba(28, 28, 21, 0.06);
+        }
+        .map-container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation -->
+<nav class="bg-[#fdf9ee] dark:bg-[#1c1c15] docked full-width top-0 z-50 flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+  <div class="flex items-center gap-12 w-full">
+    
+    <!-- LEFT: DST Logo -->
+    <div class="flex-none flex items-center gap-4">
+  <img src="./assets/iitd.png" alt="IIT Delhi Logo" class="h-20 object-contain opacity-90">
+  <img src="./assets/dst.png" alt="DST Logo" class="h-20 object-contain opacity-90">
+</div>
+
+    <div class="flex-grow flex justify-center items-center gap-8 md:flex hidden">
+
+  <a class="text-[#4e0d10] font-bold border-b-2 border-[#4e0d10] pb-1 uppercase tracking-widest text-[11px]">Home</a>
+
+  <!-- COLLECTIONS DROPDOWN -->
+  <div class="relative group">
+    <button class="uppercase tracking-widest text-[11px] flex items-center gap-1 hover:text-[#4e0d10]">
+  Collections
+  <span class="text-[13px] transition-transform duration-200 group-hover:rotate-180">▾</span>
+</button>
+
+    <div class="absolute left-0 top-full mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md p-4 w-64 z-50">
+
+      <a href="maheshwari.html" class="block py-1 hover:text-[#4e0d10]">Maheshwari</a>
+      <a href="baluchari.html" class="block py-1 hover:text-[#4e0d10]">Baluchari</a>
+      <a href="phulkari.html" class="block py-1 hover:text-[#4e0d10]">Phulkari</a>
+      <a href="muslin.html" class="block py-1 hover:text-[#4e0d10]">Muslin</a>
+      <a href="punja-durrie.html" class="block py-1 hover:text-[#4e0d10]">Punja Durrie</a>
+      <a href="namda.html" class="block py-1 hover:text-[#4e0d10]">Namda</a>
+      <a href="negamam.html" class="block py-1 hover:text-[#4e0d10]">Negamam</a>
+
+      <hr class="my-2">
+
+      <a href="research.html" class="block py-1 text-sm text-gray-600 hover:text-[#4e0d10]">
+        Sustainable Textile Research
+      </a>
+
+    </div>
+  </div>
+
+  <!-- NEW TABS -->
+  <a class="hover:text-[#4e0d10] uppercase tracking-widest text-[11px]">COE</a>
+  <a class="hover:text-[#4e0d10] uppercase tracking-widest text-[11px]">SHRI</a>
+  <a href="exhibitions.html" class="hover:text-[#4e0d10] uppercase tracking-widest text-[11px]">Exhibitions</a>
+
+  <a class="hover:text-[#4e0d10] uppercase tracking-widest text-[11px]">About</a>
+
+</div>
+
+  <!-- Dropdown -->
+  <div class="absolute left-0 mt-4 hidden group-hover:block bg-white shadow-lg rounded-md p-4 w-64 z-50">
+
+    <a href="maheshwari.html" class="block py-1 hover:text-[#4e0d10]">Maheshwari</a>
+    <a href="baluchari.html" class="block py-1 hover:text-[#4e0d10]">Baluchari</a>
+    <a href="phulkari.html" class="block py-1 hover:text-[#4e0d10]">Phulkari</a>
+    <a href="muslin.html" class="block py-1 hover:text-[#4e0d10]">Muslin</a>
+    <a href="punja-durrie.html" class="block py-1 hover:text-[#4e0d10]">Punja Durrie</a>
+    <a href="namda.html" class="block py-1 hover:text-[#4e0d10]">Namda</a>
+    <a href="negamam.html" class="block py-1 hover:text-[#4e0d10]">Negamam</a>
+
+    <!-- Divider -->
+    <hr class="my-2">
+
+    <!-- Research -->
+    <a href="research.html" class="block py-1 text-sm text-gray-600 hover:text-[#4e0d10]">
+      Sustainable Textile Research
+    </a>
+
+  </div>
+     
+    <!-- RIGHT: IITD Logo -->
+    <div class="flex-none flex items-center gap-6">
+      
+      <button class="material-symbols-outlined text-primary hover:opacity-80 transition-opacity">
+        account_circle
+      </button>
+    </div>
+
+  </div>
+</nav>
+<!-- SECTION 1: Hero Section & Handloom Collection (up to Ikat) -->
+<header class="relative min-h-[870px] flex items-center justify-center overflow-hidden bg-primary px-8 pt-12 pb-24">
+<div class="absolute inset-0 z-0 opacity-40">
+<img alt="Handloom background" class="w-full h-full object-cover grayscale brightness-50 contrast-125" data-alt="Close-up of a traditional Indian handloom with intricate dark red and black silk threads weaving a complex geometric pattern in dim museum lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKXq3DB1TPP32ojUXnLO2Davg8DjYLKukVW-Ln44kuHF-43jE6Pr3UAz-ZjgE-KcaaOXOg6czFZKdC6uDjczqE4giTtIRxXaQ2_VE9JJkZDSygQSPcaLqtvc_o4EY_k1w13dzg712-tzM9OisZPYvWrhpcBHESukjHJpWFobvZf2gR6IUpx4dQblOjqW26-Rt68OoJsM_QKHimx51M5iN4pH6B2p31YZZx8-2BmOxFigQvuINta8EkUS9aEJnrZYgB1PeqlWf9HAY"/>
+<div class="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/80 to-primary"></div>
+</div>
+<div class="relative z-10 max-w-4xl text-center px-4">
+<h1 class="text-5xl md:text-7xl lg:text-8xl text-on-primary font-headline leading-tight mb-8">
+                A Living Atlas of <br/><span class="italic">Indian Handloom Traditions</span>
+</h1>
+<p class="text-on-primary/80 text-xl md:text-2xl font-body max-w-2xl mx-auto mb-12 leading-relaxed font-light">
+                A collaborative initiative by DST and IIT Delhi to document, preserve, and celebrate the living textile traditions of India.
+            </p>
+<button class="bg-primary-container text-on-primary px-12 py-5 font-label tracking-[0.25em] text-xs font-bold hover:bg-surface-tint transition-all duration-300 uppercase active:scale-95">
+                EXPLORE COLLECTION
+            </button>
+</div>
+</header>
+<!-- Stats Bar (associated with hero) -->
+<section class="bg-primary w-full py-12 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+<div class="text-center md:border-r border-outline-variant/20 last:border-0">
+<div class="text-secondary-fixed text-3xl font-serif mb-1">12+</div>
+<div class="text-on-primary/60 text-[10px] tracking-widest uppercase font-bold">Traditions Documented</div>
+</div>
+<div class="text-center md:border-r border-outline-variant/20 last:border-0">
+<div class="text-secondary-fixed text-3xl font-serif mb-1">4000+</div>
+<div class="text-on-primary/60 text-[10px] tracking-widest uppercase font-bold">Years of Heritage</div>
+</div>
+<div class="text-center md:border-r border-outline-variant/20 last:border-0">
+<div class="text-secondary-fixed text-3xl font-serif mb-1">2M+</div>
+<div class="text-on-primary/60 text-[10px] tracking-widest uppercase font-bold">Artisan Families</div>
+</div>
+<div class="text-center last:border-0">
+<div class="text-secondary-fixed text-3xl font-serif mb-1">28+</div>
+<div class="text-on-primary/60 text-[10px] tracking-widest uppercase font-bold">GI-Tagged Crafts</div>
+</div>
+</div>
+</section>
+<!-- 1. Our Handloom Collection section (up to Ikat): Keep the soft beige background. -->
+<section class="bg-background pt-24 pb-12 px-8 md:px-16 lg:px-24">
+<div class="max-w-screen-2xl mx-auto">
+<header class="mb-20 text-center max-w-3xl mx-auto">
+<span class="text-primary font-label uppercase tracking-[0.3em] text-[11px] font-bold mb-4 block">TEXTILE ARCHIVE</span>
+<h2 class="text-4xl md:text-5xl font-serif text-on-surface mb-6">Our Handloom Collection</h2>
+<div class="thread-divider mb-8 mx-auto w-24 opacity-100 bg-primary h-[2px]"></div>
+<p class="text-on-surface-variant font-body text-lg leading-relaxed">
+                    Twelve distinct traditions from across India — each with its own geography, technique, community, and story.
+                </p>
+</header>
+<div class="textile-grid">
+<!-- Maheshwari Card -->
+<div class="group flex flex-col bg-surface-container-low transition-transform duration-500 hover:-translate-y-2">
+<a href="maheshwari.html" class="aspect-[4/5] bg-primary-container overflow-hidden relative block">
+<img alt="Maheshwari Saree" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfrCqSBuWbTlY8f1qKdbQHE2ONOehdihces0Vq-6libSDUiv_9YYal6lrrhT8Z9Y-9jtoNMb_O0olNmcNrKnIFkmSzl1Iwe0q88uebkYP2u0rcRxTov_b-nPpxAqjIuOlnpagy40Pd1ZzvwN-tddt62Oe_EZpx2njg_BbekRhSnF7IqAk4yF2dHr3oMpLhHgwXeHuVdzPta5GSSiZADj4q0TL2um586UuJQoyCFO5Zm1K47FGiZdL61qaizoqyDSIlPSdZX8XZuIk"/>
+<div class="absolute top-6 left-6 bg-surface px-4 py-1">
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">MADHYA PRADESH</span>
+</div>
+</a>
+<div class="p-8 border-t-0 border-outline-variant/10">
+<h3 class="text-2xl font-serif mb-3 text-on-surface">Maheshwari</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-6">Fine silk-cotton weaves characterized by their narrow borders and delicate patterns inspired by temple architecture.</p>
+<a href="maheshwari.html" class="inline-block text-primary font-label text-[11px] font-bold tracking-widest uppercase border-b border-primary/20 pb-1 group-hover:border-primary transition-all">Learn the Story</a>
+</div>
+</div>
+<!-- Baluchari Card -->
+<div class="group flex flex-col bg-surface-container-low transition-transform duration-500 hover:-translate-y-2">
+<a href="baluchari.html" class="aspect-[4/5] bg-secondary overflow-hidden relative block">
+<img alt="Baluchari Saree" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgUnMw5kdt2F8DMjAGEWCjgClUx6AtavycokP5RkJCPesZTF_9QQI9kfWBn-bKJpIka8Moj-cPdlGS-tPyI4NgfHwo-N9ZniA7dCrs1UASVP5lQ4t_OrQIdPOPwRkLsjf_EHuMnouqIDAPsMfytOYpZe4aUjBjob-lzXOxMWh8cw-q56FQUKcUY7K1F9ANx2BZYK1wVY-3WAZ_HttqDnuvmPlQ3d__u7e6eikDZBkXIgthklqi4qewfWe5hUL6rAwRyN82MtubCEo"/>
+<div class="absolute top-6 left-6 bg-surface px-4 py-1">
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">WEST BENGAL</span>
+</div>
+</a>
+<div class="p-8">
+<h3 class="text-2xl font-serif mb-3 text-on-surface">Baluchari</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-6">Exquisite silk saris renowned for their elaborate pallus adorned with intricate mythological scenes and courtly figures.</p>
+<a href="baluchari.html" class="inline-block text-primary font-label text-[11px] font-bold tracking-widest uppercase border-b border-primary/20 pb-1 group-hover:border-primary transition-all">Learn the Story</a>
+</div>
+</div>
+<!-- Phulkari Card -->
+<div class="group flex flex-col bg-surface-container-low transition-transform duration-500 hover:-translate-y-2">
+<a href="phulkari.html" class="aspect-[4/5] bg-tertiary-container overflow-hidden relative block">
+<img alt="Phulkari Embroidery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0h2o6NWsLCjE90hp7ytqIgo7ySQsUH2f8w3M8rKO1aPZcXnfOOMGgwxLRYV3JbUD2JWFvRszNPn5T1Hyf7zXjk0VxAuczLA_R7y5gL7r1QtDEm9H_6lsvcpJjENrB-XP-UIjAdh761YUTjpAaa48AsJUir8su_4B93ftPM8VP-Z6eILJrXZjlTMQ5QCbobjGsBSlFaiN4HZd9u38o_b7isdbDco3FA170WfZi00N-lNiCacj4dy5MZm8dYrPhi1E8V0QefMr8i20"/>
+<div class="absolute top-6 left-6 bg-surface px-4 py-1">
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">PUNJAB</span>
+</div>
+</a>
+<div class="p-8">
+<h3 class="text-2xl font-serif mb-3 text-on-surface">Phulkari</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-6">Vibrant floral embroidery on coarse cotton fabrics, traditionally crafted by women for ceremonial occasions.</p>
+<a href="phulkari.html" class="inline-block text-primary font-label text-[11px] font-bold tracking-widest uppercase border-b border-primary/20 pb-1 group-hover:border-primary transition-all">Learn the Story</a>
+</div>
+</div>
+<!-- Muslin Card -->
+<div class="group flex flex-col bg-surface-container-low transition-transform duration-500 hover:-translate-y-2">
+<a href="muslin.html" class="aspect-[4/5] bg-on-tertiary-container overflow-hidden relative block">
+<img alt="Muslin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0TrMfrTDWOtBEClE-6rLK7Ojn_o4VC1CaatzuN1ko-fyLQIdPZG0kAd7Gf-zJk7J-c5qmLbtgf-rHugg_DSlZtQLxSYdpB34Y4nrMqOIE2sJdrsTh0VLkHMKSSzbuVr_g1yFFc3Nk9fitIBS8QAQMIg5fdc8dQLIiUFCrj-x9Z_W7lsFtwOw-57WMM7LEpRmmdH_VwmTVHPQcWq4cZPenPlWJdwj8-WafsYcBafKzkPU_TtWqKeWH4PixYfAny92HijpFtjrxswM"/>
+<div class="absolute top-6 left-6 bg-surface px-4 py-1">
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">WEST BENGAL</span>
+</div>
+</a>
+<div class="p-8">
+<h3 class="text-2xl font-serif mb-3 text-on-surface">Muslin</h3>
+<p>Ultra-fine handwoven cotton from Bengal, renowned for its softness, breathability, and delicate transparency.</p>
+<a href="muslin.html" class="inline-block text-primary font-label text-[11px] font-bold tracking-widest uppercase border-b border-primary/20 pb-1 group-hover:border-primary transition-all">Learn the Story</a>
+</div>
+</div>
+
+<!-- Punja Durrie Card -->
+<div class="group flex flex-col bg-surface-container-low transition-transform duration-500 hover:-translate-y-2">
+<a href="punja-durrie.html" class="aspect-[4/5] bg-[#2d4028] overflow-hidden relative block">
+<div class="w-full h-full bg-gradient-to-tr from-[#2d4028] to-[#d2e9c7] flex items-center justify-center p-8">
+<img alt="Chanderi Fabric" class="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-60 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjGgBkQTSi0atDzaHj2GuTstOGPvWilk4bA47FJb_7IhWsH_IXNx7L30pC6KoOMGIdci7uoanKoCVo2n3XJfQ4E_s70ihKsQQPtxMFopfFkFpovyZmU92NJteTPuouowp1h9sxqvLaGXd4MoEQxX-SRsYA7BHXs5B94yK9VnnRB94T0Xrlu93_X5W18CMDuXDkxpR51MPu7yJ3Cvm-J4TL6Z0g2scfDgrXwn5zFDecjzmLmpYZcZ1CD45mfCppLZSzDdGaJRH_exs"/>
+</div>
+<div class="absolute top-6 left-6 bg-surface px-4 py-1">
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">Uttar Pradesh</span>
+</div>
+</a>
+<div class="p-8">
+<h3 class="text-2xl font-serif mb-3 text-on-surface">Punja Durrie</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-6">Flat-woven cotton rugs from Uttar Pradesh, known for bold geometric patterns and durable everyday use.\.</p>
+<a href="punja-durrie.html" class="inline-block text-primary font-label text-[11px] font-bold tracking-widest uppercase border-b border-primary/20 pb-1 group-hover:border-primary transition-all">Learn the Story</a>
+</div>
+</div>
+<!-- Namda Card -->
+<div class="group flex flex-col bg-surface-container-low transition-transform duration-500 hover:-translate-y-2">
+<a href="namda.html" class="aspect-[4/5] bg-[#0e200a] overflow-hidden relative block">
+<div class="w-full h-full bg-[#182a14] flex items-center justify-center">
+<img alt="Patola Ikat" class="w-full h-full object-cover contrast-150 brightness-75 group-hover:scale-110 transition-transform duration-[2s]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVcAogRHveyIz7oN8PwnHzHSIYMExtyWi7TQPN60yEKmQA-5qi9qv8h0NOoVvVNVzcKrAMBDWGquD_p4A6nfVkfuIZ33LOT9MTz1CHTKr7fBYeEqFSSikFPitFinTrCzt8of92oC8cZbp5C9pD3KQ-Qjc0qM7VvqJ2Wum6dMSYIwHTUR39q8_FmVXvnmeZHtSK5r-mov2kh50LN2bRcW6ttXG61PdCAFqP6R3iP64_1yTyOZo01orpZi6c2tJH6W43DORh-Vnc5jU"/>
+</div>
+<div class="absolute top-6 left-6 bg-surface px-4 py-1">
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">Maharashtra</span>
+</div>
+</a>
+<div class="p-8">
+<h3 class="text-2xl font-serif mb-3 text-on-surface">Namda</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-6">Felted wool textile from Kashmir, crafted through compression and embroidery rather than traditional weaving.</p>
+<a href="namda.html" class="inline-block text-primary font-label text-[11px] font-bold tracking-widest uppercase border-b border-primary/20 pb-1 group-hover:border-primary transition-all">Learn the Story</a>
+</div>
+</div>
+<!-- Negamam Card -->
+<div class="group flex flex-col bg-surface-container-low transition-transform duration-500 hover:-translate-y-2">
+<a href="negamam.html" class="aspect-[4/5] bg-primary overflow-hidden relative block">
+<div class="w-full h-full bg-[#4e0d10] flex items-center justify-center p-4">
+<img alt="Negamam Cotton" class="w-full h-full object-cover sepia-[0.5] opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPwnYMYYizEwt7TO5J95kRxAltJUwXm29PrYt4M7v1gSnQmh-GP-f4dN3SnXkPWEg_wMy4zpXugoVJwIWz-MW6rNrXEnBUIm4IK23C9eb7pZeHfSDgbcHsgoP28W7PAdtvPwecENNg639G8ALasyv7-75Z9JRhqMqgqf2715OuBHBVHkJy7MO6GUqwZ3q4fB3HYv5ZHyZ0efMVaDxXgQaZR5wuukVelQ3KH11N5TdaRlTBqeAzlw8Gt6c-IaPS8axpASnrZkvTupc"/>
+</div>
+<div class="absolute top-6 left-6 bg-surface px-4 py-1">
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">TAMIL NADU</span>
+</div>
+</a>
+<div class="p-8">
+<h3 class="text-2xl font-serif mb-3 text-on-surface">Negamam</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-6">Sturdy cotton weaves from Coimbatore district, known for their traditional motifs and durability.</p>
+<a href="negamam.html" class="inline-block text-primary font-label text-[11px] font-bold tracking-widest uppercase border-b border-primary/20 pb-1 group-hover:border-primary transition-all">Learn the Story</a>
+</div>
+</div>
+
+</section>
+<!-- 2. Beyond the Fabric section: Change the background to a crisp white. -->
+<section class="bg-white py-24 px-8 border-y border-outline-variant/10">
+<div class="max-w-screen-xl mx-auto text-center">
+<h2 class="text-4xl md:text-5xl font-serif text-on-surface mb-6">Beyond the Fabric</h2>
+<p class="text-on-surface-variant font-body text-lg mb-20 max-w-2xl mx-auto leading-relaxed">
+                This archive is not just about cloth. It is a record of knowledge systems, identities, and living science.
+            </p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="texture">texture</span>
+</div>
+<h4 class="font-serif text-xl mb-3">Material</h4>
+<p class="text-sm text-on-surface-variant font-body">Raw fibers, natural dyes, and the chemistry of cloth</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="architecture">architecture</span>
+</div>
+<h4 class="font-serif text-xl mb-3">Technique</h4>
+<p class="text-sm text-on-surface-variant font-body">Loom mechanics, weaving patterns, and mastery of craft</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="account_balance">account_balance</span>
+</div>
+<h4 class="font-serif text-xl mb-3">Culture</h4>
+<p class="text-sm text-on-surface-variant font-body">Rituals, ceremonies, and the social life of textiles</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="groups">groups</span>
+</div>
+<h4 class="font-serif text-xl mb-3">Community</h4>
+<p class="text-sm text-on-surface-variant font-body">Weaver families, guilds, and intergenerational knowledge</p>
+</div>
+</div>
+<div class="flex flex-col items-center max-w-xs mx-auto">
+<div class="w-16 h-16 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="science">science</span>
+</div>
+<h4 class="font-serif text-xl mb-3">Scientific Documentation</h4>
+<p class="text-sm text-on-surface-variant font-body">Computational analysis, 3D imaging, and material science</p>
+</div>
+</div>
+</section>
+<!-- 3. Explore by Region section (the map): Change the background back to the soft beige. -->
+<section class="bg-background py-24 px-8 overflow-hidden">
+<div class="max-w-screen-xl mx-auto text-center">
+<h2 class="text-4xl md:text-5xl font-serif text-on-surface mb-6">Explore by Region</h2>
+<p class="text-on-surface-variant font-body text-lg mb-16">India's handloom traditions are rooted in their geography. Click a region to discover the textiles of that land.</p>
+<div class="map-container py-12">
+<svg class="w-full h-auto opacity-80" fill="none" stroke="#4e0d10" stroke-width="1" viewbox="0 0 500 650">
+<path d="M250,50 L300,70 L350,120 L400,200 L420,300 L400,450 L350,550 L250,620 L150,550 L100,450 L80,300 L100,200 L150,120 L200,70 Z" fill="#fdf9ee" stroke-opacity="0.6"></path>
+<g class="hotspots font-body text-[10px] font-bold tracking-tighter uppercase fill-[#795907]">
+<circle cx="240" cy="90" fill="#984543" r="4"></circle>
+<text x="250" y="93">Kashmir</text>
+<circle cx="210" cy="160" fill="#984543" r="4"></circle>
+<text x="220" y="163">Punjab</text>
+<circle cx="350" cy="240" fill="#984543" r="4"></circle>
+<text x="360" y="243">Assam</text>
+<circle cx="330" cy="300" fill="#984543" r="4"></circle>
+<text x="340" y="303">W. Bengal</text>
+<circle cx="180" cy="320" fill="#984543" r="4"></circle>
+<text x="140" y="323">Gujarat</text>
+<circle cx="255" cy="320" fill="#984543" r="4"></circle>
+<text x="265" y="323">MP</text>
+<circle cx="310" cy="360" fill="#984543" r="4"></circle>
+<text x="320" y="363">Odisha</text>
+<circle cx="280" cy="400" fill="#984543" r="4"></circle>
+<text x="290" y="403">Telangana</text>
+<circle cx="265" cy="530" fill="#984543" r="4"></circle>
+<text x="275" y="533">Tamil Nadu</text>
+</g>
+</svg>
+</div>
+</div>
+</section>
+<!-- 4. Voices of the Loom section: Change the background back to white. -->
+<section class="bg-white py-24 px-8">
+<div class="max-w-screen-2xl mx-auto text-center">
+<span class="text-primary font-label uppercase tracking-[0.3em] text-[11px] font-bold mb-4 block">LIVING HERITAGE</span>
+<h2 class="text-4xl md:text-5xl font-serif text-on-surface mb-6">Voices of the Loom</h2>
+<p class="text-on-surface-variant font-body text-lg mb-16">The traditions live through the hands and memories of artisans across generations.</p>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Ramkali Devi -->
+<div class="bg-surface-container-low p-0 shadow-sm overflow-hidden flex flex-col text-left">
+<div class="h-48 bg-[#7a4e4d]"></div>
+<div class="p-10">
+<h4 class="text-xl font-serif text-on-surface mb-1">Ramkali Devi</h4>
+<span class="text-[10px] tracking-widest uppercase font-bold text-on-surface-variant mb-6 block">CHANDERI, MP</span>
+<blockquote class="border-l-2 border-primary/20 pl-6 text-on-surface-variant italic font-body leading-relaxed">
+                            "My grandmother taught me to read the loom the way others read books. Each thread is a sentence; each row, a story told in silence."
+                        </blockquote>
+</div>
+</div>
+<!-- Yakub Ali -->
+<div class="bg-surface-container-low p-0 shadow-sm overflow-hidden flex flex-col text-left">
+<div class="h-48 bg-[#4a6363]"></div>
+<div class="p-10">
+<h4 class="text-xl font-serif text-on-surface mb-1">Yakub Ali</h4>
+<span class="text-[10px] tracking-widest uppercase font-bold text-on-surface-variant mb-6 block">JAMDANI, WEST BENGAL</span>
+<blockquote class="border-l-2 border-primary/20 pl-6 text-on-surface-variant italic font-body leading-relaxed">
+                            "Each motif carries a name, a season, a prayer. We do not just weave — we remember."
+                        </blockquote>
+</div>
+</div>
+<!-- Selvam -->
+<div class="bg-surface-container-low p-0 shadow-sm overflow-hidden flex flex-col text-left">
+<div class="h-48 bg-[#635d3d]"></div>
+<div class="p-10">
+<h4 class="text-xl font-serif text-on-surface mb-1">Selvam</h4>
+<span class="text-[10px] tracking-widest uppercase font-bold text-on-surface-variant mb-6 block">KANCHIPURAM, TAMIL NADU</span>
+<blockquote class="border-l-2 border-primary/20 pl-6 text-on-surface-variant italic font-body leading-relaxed">
+                            "The silk chooses the weaver. It takes ten years before the fabric trusts your hands."
+                        </blockquote>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Centre of Excellence section: Keep the deep maroon background as it was. -->
+<section class="bg-primary py-24 px-8 text-on-primary">
+<div class="max-w-screen-xl mx-auto text-center">
+<h2 class="text-4xl md:text-5xl font-serif mb-4 leading-tight">Centre of Excellence for Textile <br/>Heritage &amp; Technology</h2>
+<p class="text-on-primary/70 text-sm tracking-widest uppercase font-bold mb-20 italic">A joint initiative of the Department of Science &amp; Technology (DST) and IIT Delhi</p>
+<div class="grid md:grid-cols-2 gap-20 text-left">
+<div>
+<h3 class="text-2xl font-serif mb-6">Why This Archive</h3>
+<div class="w-full h-[1px] bg-on-primary/20 mb-8"></div>
+<p class="font-body text-lg leading-relaxed opacity-80">
+                        India's handloom traditions carry within them centuries of accumulated knowledge — of fibers, dyes, patterns, and ritual. Much of this knowledge exists only in memory and in the hands of aging master weavers. This archive is a race against time: to document, preserve, and transmit what cannot be written in any other way. Cultural continuity depends on our ability to see and record this living science before it is lost.
+                    </p>
+</div>
+<div>
+<h3 class="text-2xl font-serif mb-6">How We Work</h3>
+<div class="w-full h-[1px] bg-on-primary/20 mb-8"></div>
+<ul class="space-y-6 font-body text-lg opacity-80">
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-secondary-fixed rounded-full"></span>
+                            Fiber &amp; Material Analysis
+                        </li>
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-secondary-fixed rounded-full"></span>
+                            Loom &amp; Technique Documentation
+                        </li>
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-secondary-fixed rounded-full"></span>
+                            Digital Archiving &amp; 3D Imaging
+                        </li>
+<li class="flex items-center gap-4">
+<span class="w-1.5 h-1.5 bg-secondary-fixed rounded-full"></span>
+                            Computational Pattern Recognition
+                        </li>
+</ul>
+</div>
+</div>
+<p class="mt-24 text-sm italic opacity-60">
+                This platform is part of a broader academic research initiative — open for institutional collaboration.
+            </p>
+</div>
+</section>
+<!-- 6. Explore All Traditions section: Use the soft beige background. -->
+<section class="bg-background">
+<!-- Full-width color blocks -->
+<div class="grid grid-cols-2 md:grid-cols-6 w-full h-48 md:h-64">
+<div class="bg-[#4e0d10] flex items-center justify-center p-4">
+<span class="text-white italic text-lg md:text-xl font-serif">Thread</span>
+</div>
+<div class="bg-[#8a6d1a] flex items-center justify-center p-4">
+<span class="text-white italic text-lg md:text-xl font-serif">Warp &amp; Weft</span>
+</div>
+<div class="bg-[#426768] flex items-center justify-center p-4">
+<span class="text-white italic text-lg md:text-xl font-serif">Natural Dyes</span>
+</div>
+<div class="bg-[#8e4f4f] flex items-center justify-center p-4">
+<span class="text-white italic text-lg md:text-xl font-serif">Handloom</span>
+</div>
+<div class="bg-[#4b6a33] flex items-center justify-center p-4">
+<span class="text-white italic text-lg md:text-xl font-serif">Motif</span>
+</div>
+<div class="bg-[#424970] flex items-center justify-center p-4">
+<span class="text-white italic text-lg md:text-xl font-serif">Craft</span>
+</div>
+</div>
+<!-- Heading and subtext -->
+<div class="py-24 px-8 text-center max-w-4xl mx-auto">
+<h2 class="text-5xl md:text-7xl font-serif text-[#4e0d10] mb-8">Explore All Traditions</h2>
+<p class="text-on-surface-variant font-body text-lg md:text-xl leading-relaxed mb-12 opacity-80">
+                Dive deeper into the archive — twelve traditions, hundreds of stories, centuries of knowledge.
+            </p>
+<button class="inline-block border-2 border-[#4e0d10] text-[#4e0d10] px-12 py-5 font-label tracking-[0.25em] text-xs font-bold hover:bg-[#4e0d10] hover:text-white transition-all duration-300 uppercase active:scale-95">
+                VIEW FULL COLLECTION
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#2a0a0a] text-[#dac1bf] w-full pt-24 pb-12 px-8 md:px-16 lg:px-24 font-body">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
+<!-- Brand Section -->
+<div class="md:col-span-4">
+<h2 class="text-3xl font-headline text-white mb-6">Heritage Textiles</h2>
+<p class="text-sm leading-relaxed max-w-xs opacity-80">
+                    A digital archive documenting the living handloom traditions of India. A collaborative initiative of DST and IIT Delhi.
+                </p>
+</div>
+<!-- Quick Links -->
+<div class="md:col-span-2">
+<h4 class="text-[11px] font-bold tracking-[0.2em] uppercase text-[#795907] mb-8">QUICK LINKS</h4>
+<ul class="space-y-4 text-sm opacity-90">
+<li><a class="hover:text-white transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Collection</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Stories</a></li>
+<li><a class="hover:text-white transition-colors" href="#">About</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Research</a></li>
+</ul>
+</div>
+<!-- Contact -->
+<div class="md:col-span-3">
+<h4 class="text-[11px] font-bold tracking-[0.2em] uppercase text-[#795907] mb-8">CONTACT</h4>
+<div class="space-y-4 text-sm opacity-90">
+<p><a class="hover:text-white transition-colors" href="mailto:archive@heritage-textiles.in">archive@heritage-textiles.in</a></p>
+<p class="leading-relaxed">
+                        Centre for Design &amp; Innovation,<br/>
+                        IIT Delhi, New Delhi — 110016
+                    </p>
+</div>
+</div>
+<!-- Institutions -->
+<div class="md:col-span-3">
+<h4 class="text-[11px] font-bold tracking-[0.2em] uppercase text-[#795907] mb-8">INSTITUTIONS</h4>
+<div class="space-y-6 text-sm opacity-90">
+<p>Department of Science &amp; Technology<br/>Government of India</p>
+<div class="w-full h-[0.5px] bg-[#dac1bf]/20"></div>
+<p>Indian Institute of Technology Delhi</p>
+</div>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="max-w-screen-2xl mx-auto pt-12 border-t border-[#dac1bf]/10 flex flex-col md:flex-row justify-between items-center gap-6 text-[11px] tracking-wider opacity-60">
+<div>© 2026 Heritage Textiles. All rights reserved.</div>
+<div class="uppercase">A DST–IIT Delhi Initiative</div>
+<div>Built with love using <a class="underline underline-offset-4 hover:text-white" href="#">caffeine.ai</a></div>
+</div>
+</footer>
+</body></html>
